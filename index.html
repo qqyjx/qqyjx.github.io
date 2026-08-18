@@ -110,6 +110,14 @@ section{position:relative;z-index:1}
 .ip-line{margin-top:8px;font-size:14px;color:var(--muted);padding:14px 18px;border:1px solid var(--line2);border-radius:12px;background:var(--surface2)}
 .ip-line b{color:var(--text)}
 
+/* News */
+.news{display:grid}
+.news .n{display:flex;gap:14px;padding:10px 2px;border-bottom:1px dashed var(--line);font-size:14.5px;align-items:baseline;color:var(--muted)}
+.news .n:last-child{border-bottom:none}
+.news .d{font-family:var(--mono);font-size:12.5px;color:var(--dim);white-space:nowrap;min-width:96px}
+.news .n b{color:var(--text)}
+.news .up{color:var(--indigo);font-weight:700;font-size:11.5px;border:1px solid rgba(99,102,241,.35);background:#EEF2FF;border-radius:6px;padding:1px 7px;margin-right:7px;white-space:nowrap}
+
 /* 时间线 */
 .tl{position:relative;padding-left:26px}
 .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--violet),transparent)}
@@ -184,6 +192,7 @@ html[lang="en"] [data-zh]{display:none}
         <a class="btn primary" id="mailBtn"><span>✉</span><span data-zh>联系我</span><span data-en>Get in touch</span></a>
         <a class="btn ghost" href="https://github.com/qqyjx" target="_blank" rel="noopener"><span>⚲</span>GitHub</a>
         <a class="btn ghost" href="https://scholar.google.com/citations?user=82mpnjEAAAAJ" target="_blank" rel="noopener"><span>🎓</span>Google Scholar</a>
+        <a class="btn ghost" href="https://orcid.org/0009-0004-6447-3242" target="_blank" rel="noopener"><span>🆔</span>ORCID</a>
         <a class="btn ghost" href="#pubs"><span data-zh>查看论文 ↓</span><span data-en>Publications ↓</span></a>
       </div>
       <div class="meta">
@@ -191,13 +200,30 @@ html[lang="en"] [data-zh]{display:none}
         <span>✉ <span id="mailText" class="mono">yifanxiao24 [at] gmail [dot] com</span></span>
         <span>🔗 github.com/qqyjx</span>
         <span>🎓 <a href="https://scholar.google.com/citations?user=82mpnjEAAAAJ" target="_blank" rel="noopener" style="color:inherit">Google Scholar</a></span>
+        <span>🆔 <a href="https://orcid.org/0009-0004-6447-3242" target="_blank" rel="noopener" style="color:inherit">ORCID 0009-0004-6447-3242</a></span>
       </div>
     </div>
   </div>
 </div></header>
 
+<section class="sec alt"><div class="wrap reveal">
+  <div class="sec-h"><span class="idx">01</span><h2><span data-zh>动态</span><span data-en>News</span></h2><span class="ln"></span></div>
+  <div class="news">
+    <div class="n"><span class="d">2026.11.10–14</span><span><span class="up" data-zh>即将</span><span class="up" data-en>Upcoming</span><span data-zh><b>ACM MM 2026</b>（巴西·里约热内卢）：展示一作论文 <b>Plan-Retrieve-Verify</b> 与 <b>ProgV-Trace</b>。</span><span data-en><b>ACM MM 2026</b> (Rio de Janeiro, Brazil): presenting first-author papers <b>Plan-Retrieve-Verify</b> and <b>ProgV-Trace</b>.</span></span></div>
+    <div class="n"><span class="d">2026.10.12–16</span><span><span class="up" data-zh>即将</span><span class="up" data-en>Upcoming</span><span data-zh><b>ASE 2026</b>（德国·慕尼黑）：报告 <b>CodeFault</b>。</span><span data-en><b>ASE 2026</b> (Munich, Germany): presenting <b>CodeFault</b>.</span></span></div>
+    <div class="n"><span class="d">2026.08.27</span><span><span class="up" data-zh>即将</span><span class="up" data-en>Upcoming</span><span data-zh><b>ICFP 2026</b>（美国·印第安纳波利斯）：<b>RunbookFX</b> 大会报告（远程）。</span><span data-en><b>ICFP 2026</b> (Indianapolis, USA): conference talk on <b>RunbookFX</b> (remote).</span></span></div>
+    <div class="n"><span class="d">2026.08.20</span><span><span class="up" data-zh>即将</span><span class="up" data-en>Upcoming</span><span data-zh><b>UAI 2026</b>：<b>ARGUS</b> 线上 poster。</span><span data-en><b>UAI 2026</b>: virtual poster for <b>ARGUS</b>.</span></span></div>
+    <div class="n"><span class="d">2026.08.17</span><span><span data-zh><b>RunbookFX</b> 正式发表于 <b>PACMPL Vol. 10（ICFP 2026）</b>，开放获取（CC BY）。</span><span data-en><b>RunbookFX</b> published in <b>PACMPL Vol. 10 (ICFP 2026)</b>, open access (CC BY).</span></span></div>
+    <div class="n"><span class="d">2026.08.16</span><span><span data-zh>一作论文被 <b>Applied Soft Computing</b>（SCI 一区）录用。</span><span data-en>First-author paper accepted at <b>Applied Soft Computing</b> (SCI Q1).</span></span></div>
+    <div class="n"><span class="d">2026.08.09–13</span><span><span data-zh>在 <b>KDD 2026</b>（韩国·济州）现场报告 <b>CALM-TS</b>。</span><span data-en>Presented <b>CALM-TS</b> at <b>KDD 2026</b> (Jeju, Korea).</span></span></div>
+    <div class="n"><span class="d">2026.07</span><span><span data-zh><b>ACM MM 2026</b> 录用 3 篇（两篇一作 + 一篇共同一作）。</span><span data-en>Three papers accepted at <b>ACM MM 2026</b> (two first-author, one co-first-author).</span></span></div>
+    <div class="n"><span class="d">2026.06</span><span><span data-zh><b>CodeFault</b> 被 <b>ASE 2026</b> 录用。</span><span data-en><b>CodeFault</b> accepted at <b>ASE 2026</b>.</span></span></div>
+    <div class="n"><span class="d">2026.05</span><span><span data-zh><b>RunbookFX</b> 被 <b>ICFP 2026</b> 录用。</span><span data-en><b>RunbookFX</b> accepted at <b>ICFP 2026</b>.</span></span></div>
+  </div>
+</div></section>
+
 <section class="sec"><div class="wrap reveal">
-  <div class="sec-h"><span class="idx">01</span><h2><span data-zh>教育背景</span><span data-en>Education</span></h2><span class="ln"></span></div>
+  <div class="sec-h"><span class="idx">02</span><h2><span data-zh>教育背景</span><span data-en>Education</span></h2><span class="ln"></span></div>
   <div class="tl">
     <div class="item"><div class="hd"><div class="ti"><span data-zh>北京大学 — 计算机软件 · 博士研究生</span><span data-en>Peking University — Ph.D., Computer Software</span></div><div class="dt">2024.09 – <span data-zh>至今</span><span data-en>Present</span></div></div><div class="ds"><span data-zh>博士阶段课程 40 学分，年级排名 3/311；获 博士研究生国家奖学金。</span><span data-en>40 doctoral course credits; class rank 3/311; National Scholarship for Doctoral Students.</span></div></div>
     <div class="item"><div class="hd"><div class="ti"><span data-zh>山东大学 — 电气工程（主修）/ 金融（辅修）· 本科</span><span data-en>Shandong University — B.Eng. Electrical Engineering & Finance (minor)</span></div><div class="dt">2020.09 – 2024.06</div></div><div class="ds"><span data-zh>主修 GPA 4.03 / 平均分 90.3 / 排名 3/309；辅修 GPA 88.2；获 本科生国家奖学金。</span><span data-en>Major GPA 4.03 / avg 90.3 / rank 3/309; minor GPA 88.2; National Scholarship for Undergraduates.</span></div></div>
@@ -205,7 +231,7 @@ html[lang="en"] [data-zh]{display:none}
 </div></section>
 
 <section class="sec alt"><div class="wrap reveal">
-  <div class="sec-h"><span class="idx">02</span><h2><span data-zh>研究方向</span><span data-en>Research Focus</span></h2><span class="ln"></span></div>
+  <div class="sec-h"><span class="idx">03</span><h2><span data-zh>研究方向</span><span data-en>Research Focus</span></h2><span class="ln"></span></div>
   <div class="pillars">
     <div class="pillar"><div class="ic">🎬</div><h3><span data-zh>多模态理解与推理</span><span data-en>Multimodal Understanding &amp; Reasoning</span></h3><p><span data-zh>视频与图文的多模态理解、推理、检索增强与事实核验。</span><span data-en>Multimodal understanding and reasoning over video and vision-language data, with retrieval grounding and factual verification.</span></p></div>
     <div class="pillar"><div class="ic">🌍</div><h3><span data-zh>世界模型</span><span data-en>World Models</span></h3><p><span data-zh>世界模型的训练与评测，及其在智能体规划中的应用。</span><span data-en>Training and evaluating world models, and applying them to agent planning.</span></p></div>
@@ -217,7 +243,7 @@ html[lang="en"] [data-zh]{display:none}
 </div></section>
 
 <section class="sec" id="pubs"><div class="wrap reveal">
-  <div class="sec-h"><span class="idx">03</span><h2><span data-zh>发表论文</span><span data-en>Publications</span></h2><span class="ln"></span></div>
+  <div class="sec-h"><span class="idx">04</span><h2><span data-zh>发表论文</span><span data-en>Publications</span></h2><span class="ln"></span></div>
 
   <div class="pub-group">
     <div class="pub-glabel"><span class="pip acc"></span><span data-zh>已录用 / 已发表</span><span data-en>Accepted / Published</span></div>
@@ -241,7 +267,7 @@ html[lang="en"] [data-zh]{display:none}
         <div class="t">CodeFault: Predicting Fault Risks from Code Changes via Multi-Modal Learning</div>
         <div class="note"><span data-zh>融合代码变更与运行时日志上下文的多模态故障风险预测；软件工程 / 代码可靠性方向。</span><span data-en>A multi-modal framework that fuses code changes with deployed-service runtime log context for fault risk prediction — software engineering / code reliability.</span></div>
         <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="tag ccfa">CORE A</span><span class="tag">ASE 2026 · IEEE/ACM ASE</span></div>
-      <div class="links"><a href="papers/CodeFault-ASE2026.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
+      <div class="links"><a href="papers/CodeFault-ASE2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3832783.3837462" target="_blank" rel="noopener">DOI ↗</a></div></div>
       <div class="card">
         <span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
         <div class="t">CALM-TS: Risk-Controlled LLM Labeling for Time-Series via Calibrated Selective Gating</div>
@@ -249,10 +275,10 @@ html[lang="en"] [data-zh]{display:none}
         <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="tag">KDD 2026 · ACM SIGKDD</span></div>
         <div class="links"><a href="papers/CALM-TS-KDD2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3770855.3817859" target="_blank" rel="noopener">DOI ↗</a><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener">Code ↗</a></div>
       </div>
-      <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
+      <div class="card"><span class="badge acc"><span data-zh>已发表</span><span data-en>Published</span></span>
         <div class="t">RunbookFX: Type- and Effect-Safe LLM Synthesis for Executable Incident Diagnosis and Mitigation</div>
         <div class="note"><span data-zh>类型与效应安全的 LLM 合成，面向可执行的事件诊断与处置。</span><span data-en>Type- and effect-safe LLM synthesis for executable incident diagnosis and mitigation.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="tag">ICFP 2026</span></div>
+        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="tag">PACMPL Vol. 10 · ICFP 2026</span></div>
         <div class="links"><a href="papers/RunbookFX-ICFP2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3828675" target="_blank" rel="noopener">DOI ↗</a></div></div>
       <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
         <div class="t">ARGUS: Argumentation-Based Minimal-Change Repair for Verifiable LLM Self-Explanations</div>
@@ -280,7 +306,18 @@ html[lang="en"] [data-zh]{display:none}
 </div></section>
 
 <section class="sec alt"><div class="wrap reveal">
-  <div class="sec-h"><span class="idx">04</span><h2><span data-zh>研究经历与项目</span><span data-en>Experience &amp; Projects</span></h2><span class="ln"></span></div>
+  <div class="sec-h"><span class="idx">05</span><h2><span data-zh>学术报告与参会</span><span data-en>Talks &amp; Presentations</span></h2><span class="ln"></span></div>
+  <div class="tl">
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>ACM MM 2026 · 巴西 · 里约热内卢</span><span data-en>ACM MM 2026 · Rio de Janeiro, Brazil</span></div><div class="dt">2026.11.10–14</div></div><div class="ds"><span data-zh>展示 Plan-Retrieve-Verify 与 ProgV-Trace（即将）。</span><span data-en>Presenting Plan-Retrieve-Verify and ProgV-Trace (upcoming).</span></div></div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>ASE 2026 · 德国 · 慕尼黑</span><span data-en>ASE 2026 · Munich, Germany</span></div><div class="dt">2026.10.12–16</div></div><div class="ds"><span data-zh>报告 CodeFault（即将）。</span><span data-en>Presenting CodeFault (upcoming).</span></div></div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>ICFP 2026 · 美国 · 印第安纳波利斯（远程报告）</span><span data-en>ICFP 2026 · Indianapolis, USA (remote talk)</span></div><div class="dt">2026.08.27</div></div><div class="ds"><span data-zh>RunbookFX 大会报告：预录报告 + 线上实时答问（即将）。</span><span data-en>Conference talk on RunbookFX: pre-recorded talk with live remote Q&amp;A (upcoming).</span></div></div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>UAI 2026 · 线上</span><span data-en>UAI 2026 · Virtual</span></div><div class="dt">2026.08.20</div></div><div class="ds"><span data-zh>ARGUS 虚拟 poster（即将）。</span><span data-en>Virtual poster for ARGUS (upcoming).</span></div></div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>KDD 2026 · 韩国 · 济州 ICC</span><span data-en>KDD 2026 · Jeju ICC, Korea</span></div><div class="dt">2026.08.09–13</div></div><div class="ds"><span data-zh>现场报告 CALM-TS。</span><span data-en>Presented CALM-TS in person.</span></div></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap reveal">
+  <div class="sec-h"><span class="idx">06</span><h2><span data-zh>研究经历与项目</span><span data-en>Experience &amp; Projects</span></h2><span class="ln"></span></div>
   <div class="tl">
     <div class="item"><div class="hd"><div class="ti"><span data-zh>清华大学深圳国际研究生院 · 助理研究员</span><span data-en>Tsinghua Shenzhen Int'l Graduate School · Research Assistant</span></div><div class="dt">2023.06 – 2023.08</div></div><div class="ds"><span data-zh>参与多模态电力大模型的预训练 / SFT / RLHF 全流程与领域数据清洗，形成论文 1 篇。</span><span data-en>Full pipeline of a multimodal power-domain LLM (pre-training / SFT / RLHF) and domain data cleaning; one resulting paper.</span></div></div>
     <div class="item"><div class="hd"><div class="ti"><span data-zh>南方电网“大瓦特”电力多模态大模型</span><span data-en>CSG “BigWatt” Multimodal Power LLM</span></div><div class="dt"><span data-zh>项目</span><span data-en>Project</span></div></div><div class="ds"><span data-zh>承担预训练 / 指令微调 / 后训练（RLHF）与领域数据清洗 pipeline 的研发。</span><span data-en>Built the pre-training / instruction-tuning / RLHF and domain data-cleaning pipeline.</span></div></div>
@@ -292,8 +329,8 @@ html[lang="en"] [data-zh]{display:none}
   </div>
 </div></section>
 
-<section class="sec"><div class="wrap reveal">
-  <div class="sec-h"><span class="idx">05</span><h2><span data-zh>专业技能</span><span data-en>Skills</span></h2><span class="ln"></span></div>
+<section class="sec alt"><div class="wrap reveal">
+  <div class="sec-h"><span class="idx">07</span><h2><span data-zh>专业技能</span><span data-en>Skills</span></h2><span class="ln"></span></div>
   <div class="skills">
     <div class="srow"><div class="k"><span data-zh>大模型</span><span data-en>LLM</span></div><div class="sk"><span>Pre-training</span><span>SFT</span><span>RLHF / RLAIF</span><span>LoRA / PEFT</span><span>Multimodal VLM</span><span>Agentic RL</span><span data-zh>可扩展 / 弱监督</span><span data-en>Scalable / Weak Supervision</span><span>Conformal Calibration</span></div></div>
     <div class="srow"><div class="k"><span data-zh>工程</span><span data-en>Engineering</span></div><div class="sk"><span>PyTorch</span><span>Transformers</span><span>PEFT / TRL</span><span>Unsloth</span><span>vLLM</span><span data-zh>分布式训练</span><span data-en>Distributed training</span><span>Git</span><span>Linux</span></div></div>
@@ -302,8 +339,8 @@ html[lang="en"] [data-zh]{display:none}
   </div>
 </div></section>
 
-<section class="sec alt"><div class="wrap reveal">
-  <div class="sec-h"><span class="idx">06</span><h2><span data-zh>荣誉奖励</span><span data-en>Honors &amp; Awards</span></h2><span class="ln"></span></div>
+<section class="sec"><div class="wrap reveal">
+  <div class="sec-h"><span class="idx">08</span><h2><span data-zh>荣誉奖励</span><span data-en>Honors &amp; Awards</span></h2><span class="ln"></span></div>
   <div class="honors">
     <div class="honor"><span class="st">★</span><span><span data-zh>博士研究生国家奖学金 · 本科生国家奖学金</span><span data-en>National Scholarship — Doctoral & Undergraduate</span></span></div>
     <div class="honor"><span class="st">★</span><span><span data-zh>全国大学生电子设计竞赛 二等奖</span><span data-en>National Electronic Design Contest — 2nd Prize</span></span></div>
@@ -319,7 +356,7 @@ html[lang="en"] [data-zh]{display:none}
   <p><span data-zh>面向大模型大厂的研究 / 算法实习岗位，欢迎来信。</span><span data-en>Looking for research / algorithm internships at leading LLM labs. Feel free to reach out.</span></p>
   <a class="btn primary" id="mailBtn2"><span>✉</span><span data-zh>给我发邮件</span><span data-en>Email me</span></a>
   <div class="mailbox" id="mailText2">yifanxiao24 [at] gmail [dot] com</div>
-  <div class="foot-note">© 2026 <span data-zh>肖逸凡 Yifan Xiao · 论文状态截至 2026 年 7 月，请以最新进展为准。</span><span data-en>Yifan Xiao · Publication status as of July 2026.</span></div>
+  <div class="foot-note">© 2026 <span data-zh>肖逸凡 Yifan Xiao · 论文状态截至 2026 年 8 月，请以最新进展为准。</span><span data-en>Yifan Xiao · Publication status as of August 2026.</span></div>
 </div></footer>
 
 <script>
