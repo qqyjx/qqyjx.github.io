@@ -87,26 +87,19 @@ section{position:relative;z-index:1}
 .pub-glabel{display:flex;align-items:center;gap:10px;font-family:var(--fh);font-weight:700;font-size:13.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1.1px;margin-bottom:14px}
 .pub-glabel .pip{width:8px;height:8px;border-radius:50%}
 .pip.acc{background:var(--green)} .pip.rev{background:var(--blue)}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;transition:.3s;box-shadow:var(--sh-sm);display:flex;flex-direction:column;gap:10px}
-.card:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:var(--line2)}
-.card.star{background:linear-gradient(170deg,rgba(99,102,241,.06),#fff 60%);border-color:rgba(99,102,241,.30)}
-.badge{align-self:flex-start;font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:7px;letter-spacing:.3px;border:1px solid transparent}
-.badge.acc{color:var(--green);background:#ECFDF5;border-color:#A7F3D0}
-.badge.rev{color:var(--blue);background:#EFF6FF;border-color:#BFDBFE}
-.badge.first{color:#fff;background:var(--grad)}
-.card .t{font-family:var(--fh);font-weight:700;font-size:15.5px;line-height:1.36;color:var(--text)}
-.card .note{font-size:13px;color:var(--muted)}
-.card .venue{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:auto;padding-top:6px}
-.tag{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:6px;background:var(--surface2);border:1px solid var(--line2);color:var(--muted)}
+.publist{display:flex;flex-direction:column}
+.pub{padding:11px 2px;border-bottom:1px dashed var(--line);display:flex;flex-direction:column;gap:5px}
+.pub:last-child{border-bottom:none}
+.pub .pt{font-family:var(--fh);font-weight:700;font-size:14.5px;line-height:1.42;color:var(--text)}
+.pub .pv{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12.5px}
+.pub .pv .vn{color:var(--muted);font-weight:600}
+.pub .pv a{color:var(--indigo);font-weight:700;font-size:12px}
+.pub .pv a:hover{text-decoration:underline}
+.tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;background:var(--surface2);border:1px solid var(--line2);color:var(--muted)}
 .tag.ccfa{color:var(--cyan);background:#ECFAFF;border-color:#B6E8F5}
 .tag.ccfb{color:var(--violet);background:#F5F0FF;border-color:#E2D4FB}
 .tag.q1{color:var(--violet);background:#F5F0FF;border-color:#E2D4FB}
 .tag.fa{color:#fff;background:var(--grad);border-color:transparent;font-weight:700}
-.fa-note{font-family:var(--fh);font-size:12px;font-weight:700;color:#fff;background:var(--grad);padding:3px 11px;border-radius:999px;align-self:center;white-space:nowrap}
-.card .links{display:flex;gap:14px;margin-top:2px;font-size:12.5px;font-weight:700}
-.card .links a{color:var(--indigo);display:inline-flex;align-items:center;gap:5px}
-.card .links a:hover{text-decoration:underline}
 .ip-line{margin-top:8px;font-size:14px;color:var(--muted);padding:14px 18px;border:1px solid var(--line2);border-radius:12px;background:var(--surface2)}
 .ip-line b{color:var(--text)}
 
@@ -211,60 +204,29 @@ html[lang="en"] [data-zh]{display:none}
 
   <div class="pub-group">
     <div class="pub-glabel"><span class="pip acc"></span><span data-zh>已录用 / 已发表</span><span data-en>Accepted / Published</span></div>
-    <div class="cards">
-      <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">Plan-Retrieve-Verify: An LLM-Driven Framework for Long-Video Audio-Visual Evidence Reasoning</div>
-        <div class="note"><span data-zh>面向长视频音视频证据推理的"规划–检索–验证"LLM 框架。</span><span data-en>An LLM-driven plan-retrieve-verify framework for long-video audio-visual evidence reasoning.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="tag">ACM MM 2026 · ACM Multimedia</span></div>
-        <div class="links"><a href="papers/PRV-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836283" target="_blank" rel="noopener">DOI ↗</a></div></div>
-      <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">ProgV-Trace: An LLM-Driven Verification Framework for Evidence-Grounded Video Misinformation Attribution</div>
-        <div class="note"><span data-zh>面向证据锚定的视频虚假信息溯源的 LLM 验证框架。</span><span data-en>An LLM-driven verification framework for evidence-grounded video misinformation attribution.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="tag">ACM MM 2026 · ACM Multimedia</span></div>
-        <div class="links"><a href="papers/ProgV-Trace-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836284" target="_blank" rel="noopener">DOI ↗</a></div></div>
-      <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">Beyond One Granularity: Spectral Ensemble and Consensus Expansion for Training-Free Composed Image Retrieval</div>
-        <div class="note"><span data-zh>免训练组合图像检索:谱集成 + 共识扩展的多粒度方法。</span><span data-en>Training-free composed image retrieval via spectral ensemble and consensus expansion.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>共同一作</span><span data-en>Co-first author</span></span><span class="tag ccfa">CCF A</span><span class="tag">ACM MM 2026 · ACM Multimedia</span></div></div>
-      <div class="card">
-        <span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">CodeFault: Predicting Fault Risks from Code Changes via Multi-Modal Learning</div>
-        <div class="note"><span data-zh>融合代码变更与运行时日志上下文的多模态故障风险预测；软件工程 / 代码可靠性方向。</span><span data-en>A multi-modal framework that fuses code changes with deployed-service runtime log context for fault risk prediction — software engineering / code reliability.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="tag ccfa">CORE A</span><span class="tag">ASE 2026 · IEEE/ACM ASE</span></div>
-      <div class="links"><a href="papers/CodeFault-ASE2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3832783.3837462" target="_blank" rel="noopener">DOI ↗</a></div></div>
-      <div class="card">
-        <span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">CALM-TS: Risk-Controlled LLM Labeling for Time-Series via Calibrated Selective Gating</div>
-        <div class="note"><span data-zh>风险可控的 LLM 弱标注：有限样本保证下的选择性接受。弱监督 / 可扩展监督。</span><span data-en>Risk-controlled LLM weak labeling with finite-sample guarantees — weak supervision / scalable oversight.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="tag">KDD 2026 · ACM SIGKDD</span></div>
-        <div class="links"><a href="papers/CALM-TS-KDD2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3770855.3817859" target="_blank" rel="noopener">DOI ↗</a><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener">Code ↗</a></div>
-      </div>
-      <div class="card"><span class="badge acc"><span data-zh>已发表</span><span data-en>Published</span></span>
-        <div class="t">RunbookFX: Type- and Effect-Safe LLM Synthesis for Executable Incident Diagnosis and Mitigation</div>
-        <div class="note"><span data-zh>类型与效应安全的 LLM 合成，面向可执行的事件诊断与处置。</span><span data-en>Type- and effect-safe LLM synthesis for executable incident diagnosis and mitigation.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="tag">PACMPL Vol. 10 · ICFP 2026</span></div>
-        <div class="links"><a href="papers/RunbookFX-ICFP2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3828675" target="_blank" rel="noopener">DOI ↗</a></div></div>
-      <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">ARGUS: Argumentation-Based Minimal-Change Repair for Verifiable LLM Self-Explanations</div>
-        <div class="note"><span data-zh>论辩式最小改动修复，面向可验证的 LLM 自解释。</span><span data-en>Argumentation-based minimal-change repair for verifiable LLM self-explanations.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="tag">UAI 2026</span></div><div class="links"><a href="papers/ARGUS-UAI2026.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
-      <div class="card"><span class="badge acc"><span data-zh>已录用</span><span data-en>Accepted</span></span>
-        <div class="t">Fuzzy-Gated Verification of LLM Agents for Industrial Fault Diagnosis: An Evolutionary-Optimized Closed-Loop Framework</div>
-        <div class="note"><span data-zh>模糊门控验证 + 进化优化的 LLM 智能体工业故障诊断闭环。</span><span data-en>Fuzzy-gated, evolutionary-optimized closed-loop LLM-agent verification for industrial fault diagnosis.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag q1"><span data-zh>SCI 一区</span><span data-en>SCI Q1</span></span><span class="tag">Applied Soft Computing 2026</span></div><div class="links"><a href="papers/CL-LLMOps-ASOC2026-accepted-manuscript.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
-      <div class="card"><span class="badge acc"><span data-zh>已发表</span><span data-en>Published</span></span>
-        <div class="t">Knowledge Fusion in Deep Learning-based Medical Vision-Language Models: A Review</div>
-        <div class="note"><span data-zh>医疗多模态大模型知识融合综述。</span><span data-en>A survey of knowledge fusion in medical vision-language models.</span></div>
-        <div class="venue"><span class="tag q1">SCI Q1 · CCF B</span><span class="tag">Information Fusion</span></div><div class="links"><a href="https://doi.org/10.1016/j.inffus.2025.103455" target="_blank" rel="noopener">DOI ↗</a></div></div>
-      <div class="card"><span class="badge acc"><span data-zh>已发表</span><span data-en>Published</span></span>
-        <div class="t">Time Series Anomaly Detection: A Hybrid Deep Learning Framework with Adaptive Thresholding for Electricity Industry Data</div>
-        <div class="note"><span data-zh>面向电力行业数据的混合深度学习时序异常检测与自适应阈值框架。</span><span data-en>Hybrid deep-learning time-series anomaly detection with adaptive thresholding for electricity-industry data.</span></div>
-        <div class="venue"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag">IEEE CSCloud 2025</span></div>
-        <div class="links"><a href="https://doi.org/10.1109/CSCLOUD66326.2025.00046" target="_blank" rel="noopener">DOI ↗</a></div></div>
+    <div class="publist">
+      <div class="pub"><div class="pt">Plan-Retrieve-Verify: An LLM-Driven Framework for Long-Video Audio-Visual Evidence Reasoning</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span><a href="papers/PRV-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836283" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">ProgV-Trace: An LLM-Driven Verification Framework for Evidence-Grounded Video Misinformation Attribution</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span><a href="papers/ProgV-Trace-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836284" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">Beyond One Granularity: Spectral Ensemble and Consensus Expansion for Training-Free Composed Image Retrieval</div>
+        <div class="pv"><span class="tag fa"><span data-zh>共同一作</span><span data-en>Co-first author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span></div></div>
+      <div class="pub"><div class="pt">CodeFault: Predicting Fault Risks from Code Changes via Multi-Modal Learning</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ASE 2026</span><a href="papers/CodeFault-ASE2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3832783.3837462" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">CALM-TS: Risk-Controlled LLM Labeling for Time-Series via Calibrated Selective Gating</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">KDD 2026</span><a href="papers/CALM-TS-KDD2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3770855.3817859" target="_blank" rel="noopener">DOI ↗</a><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener">Code ↗</a></div></div>
+      <div class="pub"><div class="pt">RunbookFX: Type- and Effect-Safe LLM Synthesis for Executable Incident Diagnosis and Mitigation</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="vn">PACMPL Vol. 10 · ICFP 2026</span><a href="papers/RunbookFX-ICFP2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3828675" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">ARGUS: Argumentation-Based Minimal-Change Repair for Verifiable LLM Self-Explanations</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="vn">UAI 2026</span><a href="papers/ARGUS-UAI2026.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
+      <div class="pub"><div class="pt">Fuzzy-Gated Verification of LLM Agents for Industrial Fault Diagnosis: An Evolutionary-Optimized Closed-Loop Framework</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag q1"><span data-zh>SCI 一区</span><span data-en>SCI Q1</span></span><span class="vn">Applied Soft Computing 2026</span><a href="papers/CL-LLMOps-ASOC2026-accepted-manuscript.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
+      <div class="pub"><div class="pt">Knowledge Fusion in Deep Learning-based Medical Vision-Language Models: A Review</div>
+        <div class="pv"><span class="tag q1">SCI Q1 · CCF B</span><span class="vn">Information Fusion</span><a href="https://doi.org/10.1016/j.inffus.2025.103455" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">Time Series Anomaly Detection: A Hybrid Deep Learning Framework with Adaptive Thresholding for Electricity Industry Data</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="vn">IEEE CSCloud 2025</span><a href="https://doi.org/10.1109/CSCLOUD66326.2025.00046" target="_blank" rel="noopener">DOI ↗</a></div></div>
     </div>
   </div>
-
-  
 
   <div class="ip-line"><span data-zh>📜 <b>知识产权</b>：软件著作权 <b>5 项</b> · 发明专利 <b>10+ 项</b>。</span><span data-en>📜 <b>Intellectual property</b>: <b>5</b> registered software copyrights · <b>10+</b> invention patents.</span></div>
 </div></section>
