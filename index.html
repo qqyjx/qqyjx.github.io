@@ -49,6 +49,12 @@ section{position:relative;z-index:1}
 .name .en{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .role{margin-top:9px;font-size:clamp(14.5px,2.1vw,17px);color:var(--muted);font-weight:500;max-width:660px}
 .role b{color:var(--text);font-weight:700}
+.focus{margin-top:16px;max-width:660px}
+.focus-h{font-size:clamp(14px,1.9vw,15.5px);color:var(--muted);font-weight:500}
+.focus-h b{color:var(--text);font-weight:700}
+.focus-sub{margin-top:4px;font-size:clamp(14px,1.9vw,15.5px);color:var(--muted)}
+.focus-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.focus-pills>span{font-family:var(--mono);font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:8px;background:var(--surface2);border:1px solid var(--line2);color:var(--indigo)}
 
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .chip{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line2);color:var(--text);box-shadow:var(--sh-sm)}
@@ -175,8 +181,18 @@ html[lang="en"] [data-zh]{display:none}
     <div class="hero-main">
       <div class="name"><span data-zh>肖逸凡 </span><span class="en">Yifan Xiao</span></div>
       <div class="role">
-        <span data-zh><b>北京大学</b> 计算机软件 博士研究生 · 研究方向 <b>Self-Improving Language Agents</b>：让智能体从真实与模拟交互中获得经验、经后训练持续提升决策 —— Agentic RL · LLM 后训练 · 世界模型 · 递归自我改进（RSI）。</span>
-        <span data-en><b>Ph.D. Student</b>, Computer Software, <b>Peking University</b> · <b>Self-Improving Language Agents</b>: agents that gain experience from real and simulated interaction and improve their decisions through post-training &mdash; agentic RL · LLM post-training · world models · recursive self-improvement (RSI).</span>
+        <span data-zh><b>北京大学</b> 计算机软件 博士研究生</span>
+        <span data-en><b>Ph.D. Student</b>, Computer Software, <b>Peking University</b></span>
+      </div>
+      <div class="focus">
+        <div class="focus-h"><span data-zh>研究方向</span><span data-en>Research focus</span> · <b>Self-Improving Language Agents</b></div>
+        <div class="focus-sub"><span data-zh>让智能体从交互中获得经验，并通过后训练持续变强。</span><span data-en>Agents that learn from interaction and keep improving through post-training.</span></div>
+        <div class="focus-pills">
+          <span>Agentic RL</span>
+          <span><span data-zh>LLM 后训练</span><span data-en>LLM Post-training</span></span>
+          <span><span data-zh>世界模型</span><span data-en>World Models</span></span>
+          <span><span data-zh>递归自我改进 (RSI)</span><span data-en>Recursive Self-Improvement (RSI)</span></span>
+        </div>
       </div>
       <div class="chips">
         <span class="chip hl"><span class="dot"></span><span data-zh>5 篇 CCF A 一作录用 · 9 篇顶级会议 / 期刊录用</span><span data-en>5 first-author CCF-A · 9 top-venue papers accepted</span></span>
