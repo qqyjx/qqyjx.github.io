@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>肖逸凡 Yifan Xiao · Self-Improving Language Agents</title>
-<meta name="description" content="肖逸凡 Yifan Xiao — 北京大学计算机软件博士生，研究自我改进的语言智能体：智能体强化学习、后训练与世界模型，以及支撑它们的可验证监督；ASE / KDD / ICFP / UAI / ACM MM 等顶会与期刊论文。">
+<meta name="description" content="肖逸凡 Yifan Xiao — 北京大学计算机软件博士生，研究自我改进的语言智能体：智能体强化学习、LLM 后训练、世界模型与递归自我改进（RSI）；ASE / KDD / ICFP / UAI / ACM MM 等顶会与期刊论文。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236366F1'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle' fill='%23fff' font-family='Arial' font-weight='bold'%3EYX%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,8 +175,8 @@ html[lang="en"] [data-zh]{display:none}
     <div class="hero-main">
       <div class="name"><span data-zh>肖逸凡 </span><span class="en">Yifan Xiao</span></div>
       <div class="role">
-        <span data-zh><b>北京大学</b> 计算机软件 博士研究生 · 研究方向 <b>Self-Improving Language Agents</b>：让智能体从真实与模拟交互中获得经验、经后训练持续提升决策 —— Agentic RL · 后训练 · 世界模型 · 可验证监督。</span>
-        <span data-en><b>Ph.D. Student</b>, Computer Software, <b>Peking University</b> · <b>Self-Improving Language Agents</b>: agents that gain experience from real and simulated interaction and improve their decisions through post-training &mdash; agentic RL · post-training · world models · verifiable supervision.</span>
+        <span data-zh><b>北京大学</b> 计算机软件 博士研究生 · 研究方向 <b>Self-Improving Language Agents</b>：让智能体从真实与模拟交互中获得经验、经后训练持续提升决策 —— Agentic RL · LLM 后训练 · 世界模型 · 递归自我改进（RSI）。</span>
+        <span data-en><b>Ph.D. Student</b>, Computer Software, <b>Peking University</b> · <b>Self-Improving Language Agents</b>: agents that gain experience from real and simulated interaction and improve their decisions through post-training &mdash; agentic RL · LLM post-training · world models · recursive self-improvement (RSI).</span>
       </div>
       <div class="chips">
         <span class="chip hl"><span class="dot"></span><span data-zh>5 篇 CCF A 一作录用 · 9 篇顶级会议 / 期刊录用</span><span data-en>5 first-author CCF-A · 9 top-venue papers accepted</span></span>
@@ -244,12 +244,10 @@ html[lang="en"] [data-zh]{display:none}
 <section class="sec alt"><div class="wrap reveal">
   <div class="sec-h"><span class="idx">03</span><h2><span data-zh>研究方向</span><span data-en>Research Focus</span></h2><span class="ln"></span></div>
   <div class="pillars">
-    <div class="pillar"><div class="ic">🤖</div><h3><span data-zh>智能体强化学习</span><span data-en>Agentic RL</span></h3><p><span data-zh>长程信用分配、稀疏奖励、工具调用与多轮交互的强化学习，以及智能体的自我改进。</span><span data-en>Long-horizon credit assignment, sparse rewards, tool-use and multi-turn RL, and self-improvement for language agents.</span></p></div>
-    <div class="pillar"><div class="ic">🧪</div><h3><span data-zh>后训练</span><span data-en>Post-training</span></h3><p><span data-zh>GRPO / PPO / RLVR，能力涌现与技能组合，持续后训练与经验蒸馏。</span><span data-en>GRPO / PPO / RLVR, capability emergence and skill composition, continual post-training and experience distillation.</span></p></div>
+    <div class="pillar"><div class="ic">🤖</div><h3><span data-zh>智能体强化学习</span><span data-en>Agentic RL</span></h3><p><span data-zh>长程信用分配、稀疏奖励、工具调用与多轮交互的强化学习，过程奖励与验证器的可靠性。</span><span data-en>Long-horizon credit assignment, sparse rewards, tool-use and multi-turn RL, and the reliability of process rewards and verifiers.</span></p></div>
+    <div class="pillar"><div class="ic">🧪</div><h3><span data-zh>LLM 后训练</span><span data-en>LLM Post-training</span></h3><p><span data-zh>GRPO / PPO / RLVR，能力涌现与技能组合，持续后训练与经验蒸馏。</span><span data-en>GRPO / PPO / RLVR, capability emergence and skill composition, continual post-training and experience distillation.</span></p></div>
     <div class="pillar"><div class="ic">🌍</div><h3><span data-zh>世界模型</span><span data-en>World Models</span></h3><p><span data-zh>智能体世界模型、想象 rollout 与基于模型的规划，以及作为验证器的世界模型。</span><span data-en>Agent world models, imagined rollouts and model-based planning, and the world model as a verifier.</span></p></div>
-    <div class="pillar"><div class="ic">🛰️</div><h3><span data-zh>可验证监督</span><span data-en>Verifiable Supervision</span></h3><p><span data-zh>过程奖励与验证器何时可信：环境侧证据、剂量匹配对照、噪声底判决、漂移复测。</span><span data-en>When process rewards and verifiers can be trusted: environment-side evidence, dose-matched controls, noise-floor verdicts, drift re-tests.</span></p></div>
-    <div class="pillar"><div class="ic">🔁</div><h3><span data-zh>三者交叉</span><span data-en>At the Intersection</span></h3><p><span data-zh>自我改进的智能体、测试时学习、可验证经验、基于模型的智能体强化学习。</span><span data-en>Self-improving agents, test-time learning, verifiable experience, model-based agentic RL.</span></p></div>
-    <div class="pillar"><div class="ic">⚙️</div><h3><span data-zh>AIOps 落地</span><span data-en>AIOps</span></h3><p><span data-zh>LLM 在故障诊断与电力、医疗运维中的可验证落地（学位论文场景）。</span><span data-en>Verifiable LLM deployment for fault diagnosis and power / medical O&amp;M (the dissertation setting).</span></p></div>
+    <div class="pillar"><div class="ic">🔁</div><h3><span data-zh>递归自我改进（RSI）</span><span data-en>Recursive Self-Improvement (RSI)</span></h3><p><span data-zh>智能体从自身 rollout 中获得经验、经验证后回灌后训练，形成 rollout → 经验 → 验证 → 后训练 → 更强策略的闭环。</span><span data-en>Agents gain experience from their own rollouts, verify it, and feed it back into post-training: the rollout → experience → verifier → post-training → better policy loop.</span></p></div>
   </div>
 </div></section>
 
