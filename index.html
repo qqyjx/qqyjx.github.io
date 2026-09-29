@@ -372,8 +372,8 @@ html[lang="en"] [data-zh]{display:none}
 
 <section class="sec alt" id="exp"><div class="wrap">
   <div class="sec-h"><span class="idx">05</span><h2><span data-zh>项目经历</span><span data-en>Projects</span></h2><span class="ln"></span></div>
-  <p class="sec-lead"><span data-zh>研究项目处理智能体强化学习和 RLVR 后训练里的三个问题：步级信用怎样分配、奖励会不会被策略刷掉、比较结论能不能与噪声区分。落地项目把大模型放进真实业务流程，要求输出能被检查，出错时有确定的兜底。</span><span data-en>The research projects address three problems in agentic RL and RLVR post-training: how to assign step-level credit, whether the policy farms the reward, and whether a comparison can be told apart from noise. The deployed projects put LLMs inside real workflows, where output has to be checkable and failures need a deterministic fallback.</span></p>
-  <div class="pub-glabel"><span class="pip rev"></span><span data-zh>研究项目（在审 / 准备投稿）</span><span data-en>Research projects (under review / in preparation)</span></div>
+  <p class="sec-lead"><span data-zh>研究项目处理智能体强化学习和 RLVR 后训练里的两个问题：步级信用怎样分配，比较结论能不能与噪声区分。落地项目把大模型放进真实业务流程，要求输出能被检查，出错时有确定的兜底。</span><span data-en>The research projects address two problems in agentic RL and RLVR post-training: how to assign step-level credit, and whether a comparison can be told apart from noise. The deployed projects put LLMs inside real workflows, where output has to be checkable and failures need a deterministic fallback.</span></p>
+  <div class="pub-glabel"><span class="pip rev"></span><span data-zh>研究项目（在审）</span><span data-en>Research projects (under review)</span></div>
   <div class="tl">
     <div class="item"><div class="hd"><div class="ti"><span data-zh>智能体 RL 的步级信用分配：反事实优势策略优化（CAPO）</span><span data-en>CAPO: Step-Level Credit Assignment for Agentic RL via Counterfactual Advantage Policy Optimization</span></div><div class="dt"><span data-zh>AAAI 2027 在审</span><span data-en>AAAI 2027, under review</span></div></div>
       <div class="rl"><span data-zh>一作。多步 LLM 智能体做故障诊断时只拿到轨迹级奖励，分不出哪一步诊断动作真正起了作用。</span><span data-en>First author. A multi-step LLM agent doing fault diagnosis receives only a trajectory-level reward and cannot tell which diagnostic step mattered.</span></div>
@@ -392,14 +392,6 @@ html[lang="en"] [data-zh]{display:none}
         <li><span data-zh><b>规模</b>：7 对公开 base/RLVR 模型（1.5B–14B）；主模型对上 684 个（采样设置 × 打分规则）格点；温度轴 30 个登记比较中，11 个的移动小于噪声底，无法判定。</span><span data-en><b>Scale</b>: 7 public base/RLVR pairs (1.5B–14B); 684 sampling-by-scoring cells on the main pair; along the temperature axis, 11 of 30 registered comparisons move less than their noise floor and are unjudgeable.</span></li>
       </ul>
       <div class="kw"><span>RLVR</span><span>pass@k</span><span data-zh>评估方法</span><span data-en>Evaluation methodology</span><span>Bootstrap</span></div>
-    </div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>RL 搜索智能体的步级奖励被刷</span><span data-en>Step-Reward Farming in RL Search Agents</span></div><div class="dt"><span data-zh>准备投稿 WWW 2027</span><span data-en>In preparation, WWW 2027</span></div></div>
-      <div class="rl"><span data-zh>一作。步级过程奖励常被用来补充稀疏的结果奖励；但如果奖励看的是策略自己写出的文本，策略可以直接写出被奖励的内容。</span><span data-en>First author. Step-level process rewards are a common fix for sparse outcome rewards, but when the reward reads text the policy writes itself, the policy can simply write what is rewarded.</span></div>
-      <ul class="bl">
-        <li><span data-zh><b>实验设计</b>：Qwen2.5-3B-Instruct + GRPO（verl，Search-R1 配方，每步 96 题、组大小 5、150 步），同条件训练过程奖励、结果奖励和强度匹配的稠密空奖励三组对照，每组 3 个训练种子。</span><span data-en><b>Design</b>: Qwen2.5-3B-Instruct with GRPO (verl, Search-R1 recipe; 96 questions per step, group size 5, 150 steps); process-reward, outcome-reward and a matched dense-null arm trained under the same conditions, 3 training seeds each.</span></li>
-        <li><span data-zh><b>行为审计</b>：逐步检查策略学到了什么：自己编写“证据”块、复述查询来换取步奖励，部分种子训练塌方。结论是：奖励落在策略能控制的文本通道上，就会被刷。</span><span data-en><b>Behavior audit</b>: step-by-step inspection of what the policy learned, including self-written "evidence" blocks, query echoes that collect step reward, and training collapse in some seeds. The conclusion: a reward placed on a text channel the policy controls gets farmed.</span></li>
-      </ul>
-      <div class="kw"><span data-zh>过程奖励</span><span data-en>Process reward</span><span data-zh>奖励欺骗</span><span data-en>Reward hacking</span><span>GRPO</span><span>verl</span></div>
     </div>
   </div>
   <div class="pub-glabel"><span class="pip acc"></span><span data-zh>落地项目</span><span data-en>Deployed projects</span></div>
