@@ -134,7 +134,6 @@ section{position:relative;z-index:1}
 .fr .lb{font-family:var(--mono);font-size:11px;color:var(--acc);text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
 .allpubs{margin-top:18px}
 .allpubs .pub .pt{font-size:13.8px}
-#exp .tl+.pub-glabel{margin-top:30px}
 .pub-glabel{break-after:avoid;page-break-after:avoid}
 .ip-line{margin-top:8px;font-size:14px;color:var(--ink2);padding:12px 16px;border:1px solid var(--line2);border-left:2px solid var(--acc);border-radius:4px;background:var(--panel)}
 .ip-line b{color:var(--ink);font-weight:600}
@@ -224,7 +223,6 @@ html[lang="en"] [data-zh]{display:none}
     <a href="#edu"><span data-zh>教育</span><span data-en>education</span></a>
     <a href="#research"><span data-zh>研究</span><span data-en>research</span></a>
     <a href="#news"><span data-zh>动态</span><span data-en>news</span></a>
-    <a href="#exp"><span data-zh>项目</span><span data-en>projects</span></a>
     <a href="#skills"><span data-zh>技能</span><span data-en>skills</span></a>
     <a href="#honors"><span data-zh>荣誉</span><span data-en>honors</span></a>
   </nav>
@@ -259,7 +257,7 @@ html[lang="en"] [data-zh]{display:none}
     <div class="stat"><div class="v">5</div><div class="l"><span data-zh>CCF A 一作录用</span><span data-en>first-author CCF-A papers</span></div></div>
     <div class="stat"><div class="v">10+</div><div class="l"><span data-zh>顶级会议 / 期刊录用</span><span data-en>top-venue papers accepted</span></div></div>
     <div class="stat"><div class="v">×2</div><div class="l"><span data-zh>国家奖学金（博士 · 本科）</span><span data-en>National Scholarship</span></div></div>
-    <div class="stat"><div class="v">5 · 10+</div><div class="l"><span data-zh>软著 · 专利</span><span data-en>copyrights · patents</span></div></div>
+    <div class="stat"><div class="v">10+</div><div class="l"><span data-zh>发明专利</span><span data-en>invention patents</span></div></div>
   </div>
   <div class="cta">
     <a class="btn primary" id="mailBtn"><span data-zh>联系我</span><span data-en>Get in touch</span></a>
@@ -281,32 +279,55 @@ html[lang="en"] [data-zh]{display:none}
 <section class="sec alt" id="pubs"><div class="wrap">
   <div class="sec-h"><span class="idx">01</span><h2><span data-zh>论文</span><span data-en>Publications</span></h2><span class="ln"></span></div>
 
-  <div class="publist">
-    <div class="pub"><div class="pt">Plan-Retrieve-Verify: An LLM-Driven Framework for Long-Video Audio-Visual Evidence Reasoning</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span><span class="tag dir"><span data-zh>工具调用智能体 · 过程监督</span><span data-en>Tool-use agent · process supervision</span></span><a href="papers/PRV-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836283" target="_blank" rel="noopener">DOI ↗</a></div></div>
-    <div class="pub"><div class="pt">CALM-TS: Risk-Controlled LLM Labeling for Time-Series via Calibrated Selective Gating</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">KDD 2026</span><span class="tag dir"><span data-zh>可信监督信号</span><span data-en>Trustworthy supervision</span></span><a href="papers/CALM-TS-KDD2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3770855.3817859" target="_blank" rel="noopener">DOI ↗</a><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener">Code ↗</a></div></div>
-    <div class="pub"><div class="pt">CodeFault: Predicting Fault Risks from Code Changes via Multi-Modal Learning</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ASE 2026</span><a href="papers/CodeFault-ASE2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3832783.3837462" target="_blank" rel="noopener">DOI ↗</a></div></div>
-    <div class="pub"><div class="pt">ProgV-Trace: An LLM-Driven Verification Framework for Evidence-Grounded Video Misinformation Attribution</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span><span class="tag dir"><span data-zh>可执行验证 · 蒸馏</span><span data-en>Executable verification · distillation</span></span><a href="papers/ProgV-Trace-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836284" target="_blank" rel="noopener">DOI ↗</a></div></div>
-    <div class="pub"><div class="pt">RunbookFX: Type- and Effect-Safe LLM Synthesis for Executable Incident Diagnosis and Mitigation</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="vn">PACMPL Vol. 10 · ICFP 2026</span><span class="tag dir"><span data-zh>可验证的智能体动作</span><span data-en>Verifiable agent actions</span></span><a href="papers/RunbookFX-ICFP2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3828675" target="_blank" rel="noopener">DOI ↗</a></div></div>
-    <div class="pub"><div class="pt">Beyond One Granularity: Spectral Ensemble and Consensus Expansion for Training-Free Composed Image Retrieval</div>
-      <div class="pv"><span class="tag fa"><span data-zh>共同一作</span><span data-en>Co-first author</span></span><span class="tag ccfa">CCF A</span><span class="tag oral">Oral</span><span class="vn">ACM MM 2026</span><a href="papers/BeyondOneGranularity-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3835648" target="_blank" rel="noopener">DOI ↗</a></div></div>
-    <div class="pub"><div class="pt">ARGUS: Argumentation-Based Minimal-Change Repair for Verifiable LLM Self-Explanations</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="vn">UAI 2026</span><a href="papers/ARGUS-UAI2026.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
-    <div class="pub"><div class="pt">Fuzzy-Gated Verification of LLM Agents for Industrial Fault Diagnosis: An Evolutionary-Optimized Closed-Loop Framework</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag q1"><span data-zh>JCR Q1 · 中科院 2 区 Top</span><span data-en>JCR Q1 · CAS Tier 2 (Top)</span></span><span class="vn">Applied Soft Computing 2026</span><span class="tag"><span data-zh>已录用</span><span data-en>Accepted</span></span><a href="papers/CL-LLMOps-ASOC2026-accepted-manuscript.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
-    <div class="pub"><div class="pt">Knowledge Fusion in Deep Learning-based Medical Vision-Language Models: A Review</div>
-      <div class="pv"><span class="tag ccfc"><span data-zh>综述</span><span data-en>Survey</span></span><span class="tag q1">SCI Q1</span><span class="vn">Information Fusion</span><a href="https://doi.org/10.1016/j.inffus.2025.103455" target="_blank" rel="noopener">DOI ↗</a></div></div>
-    <div class="pub"><div class="pt">A Bidirectional Uncertainty-Suppressed Cross-Attention Network for EEG Classification</div>
-      <div class="pv"><span class="tag"><span data-zh>四作</span><span data-en>4th author</span></span><span class="tag ccfb">CCF B</span><span class="vn">IEEE BIBM 2026</span></div></div>
-    <div class="pub"><div class="pt">Time Series Anomaly Detection: A Hybrid Deep Learning Framework with Adaptive Thresholding for Electricity Industry Data</div>
-      <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfc">CCF C</span><span class="vn">IEEE CSCloud 2025</span><a href="https://doi.org/10.1109/CSCLOUD66326.2025.00046" target="_blank" rel="noopener">DOI ↗</a></div></div>
+  <div class="pub-group">
+    <div class="pub-glabel"><span class="pip rev"></span><span data-zh>代表性论文（CCF A，5 篇）</span><span data-en>Selected papers (CCF A, 5)</span></div>
+    <div class="publist">
+      <div class="pub"><div class="pt">Plan-Retrieve-Verify: An LLM-Driven Framework for Long-Video Audio-Visual Evidence Reasoning</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span><span class="tag dir"><span data-zh>工具调用智能体 · 过程监督</span><span data-en>Tool-use agent · process supervision</span></span><a href="papers/PRV-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836283" target="_blank" rel="noopener">DOI ↗</a></div>
+        <div class="fr"><span class="lb"><span data-zh>问题</span><span data-en>Problem</span></span><span><span data-zh>长视频问答要在画面、语音和环境音之间多轮找证据；现有方法检索一次就作答，不检查证据是否支持结论。</span><span data-en>Long-video QA needs several rounds of evidence search across frames, speech and ambient sound; existing methods retrieve once and answer without checking that the evidence supports the conclusion.</span></span></div>
+        <div class="fr"><span class="lb"><span data-zh>方法</span><span data-en>Approach</span></span><span><span data-zh>LLM 控制器执行“计划 → 检索 → 验证”工具调用闭环，证据不足或矛盾时拒答；用 5 类反事实扰动轨迹直接监督规划、选工具和验证等中间决策。</span><span data-en>An LLM controller runs a plan → retrieve → verify tool-calling loop and abstains when evidence is missing or contradictory; counterfactual trajectory supervision with five perturbation types trains the intermediate planning, tool-selection and verification decisions.</span></span></div>
+      </div>
+      <div class="pub"><div class="pt">CALM-TS: Risk-Controlled LLM Labeling for Time-Series via Calibrated Selective Gating</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">KDD 2026</span><span class="tag dir"><span data-zh>可信监督信号</span><span data-en>Trustworthy supervision</span></span><a href="papers/CALM-TS-KDD2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3770855.3817859" target="_blank" rel="noopener">DOI ↗</a><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener">Code ↗</a></div>
+        <div class="fr"><span class="lb"><span data-zh>问题</span><span data-en>Problem</span></span><span><span data-zh>LLM 能给时间序列事件打弱标签，但错误率没有上界，不能直接当训练数据。</span><span data-en>LLMs can weakly label time-series events, but their error rate has no bound, so the labels cannot be used directly as training data.</span></span></div>
+        <div class="fr"><span class="lb"><span data-zh>方法</span><span data-en>Approach</span></span><span><span data-zh>在提示措辞、采样温度、上下文窗口三个维度上探测模型分歧，校准门控决定接受或拒标，给出有限样本保证：标注错误率不超过预设上限。</span><span data-en>Probe model disagreement across prompt wording, sampling temperature and context window; a calibrated gate accepts or abstains with a finite-sample guarantee that the labeling error rate stays below a preset bound.</span></span></div>
+      </div>
+      <div class="pub"><div class="pt">CodeFault: Predicting Fault Risks from Code Changes via Multi-Modal Learning</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ASE 2026</span><a href="papers/CodeFault-ASE2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3832783.3837462" target="_blank" rel="noopener">DOI ↗</a></div>
+        <div class="fr"><span class="lb"><span data-zh>问题</span><span data-en>Problem</span></span><span><span data-zh>即时缺陷预测只看代码变更，日志异常检测只看运行时行为，两者脱节，故障发现滞后。</span><span data-en>Just-in-time defect prediction sees only code changes and log anomaly detection sees only runtime behavior, so faults are found late.</span></span></div>
+        <div class="fr"><span class="lb"><span data-zh>方法</span><span data-en>Approach</span></span><span><span data-zh>以两级故障谱（4 个粗类、8 个细类）为共享空间对齐代码变更与运行日志，并用故障谱一致性引导 token 级跨模态注意力；蒸馏出只用代码的版本，可在提交前部署。</span><span data-en>Align code changes and runtime logs in a shared two-level fault taxonomy (4 coarse, 8 fine categories) and use taxonomy agreement to guide token-level cross-modal attention; a distilled code-only variant runs before commit.</span></span></div>
+      </div>
+      <div class="pub"><div class="pt">ProgV-Trace: An LLM-Driven Verification Framework for Evidence-Grounded Video Misinformation Attribution</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CCF A</span><span class="vn">ACM MM 2026</span><span class="tag dir"><span data-zh>可执行验证 · 蒸馏</span><span data-en>Executable verification · distillation</span></span><a href="papers/ProgV-Trace-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3836284" target="_blank" rel="noopener">DOI ↗</a></div>
+        <div class="fr"><span class="lb"><span data-zh>问题</span><span data-en>Problem</span></span><span><span data-zh>视频虚假信息常由真实画面、伪造字幕和篡改语音拼成；现有检测器只给真假判定，指不出是哪个元素让叙述变假。</span><span data-en>Video misinformation mixes real footage with forged captions or altered speech; detectors give a true/false verdict but cannot say which element makes the claim false.</span></span></div>
+        <div class="fr"><span class="lb"><span data-zh>方法</span><span data-en>Approach</span></span><span><span data-zh>LLM 生成类型化 DSL 验证程序，构建多模态溯源图，用最小反事实干预量化每个元素的责任；再把推理蒸馏到小型验证器，部署时不调用 LLM。</span><span data-en>An LLM writes verification programs in a typed DSL, builds a multimodal provenance graph and scores each element's responsibility with minimal counterfactual interventions; the reasoning is distilled into a small verifier that needs no LLM at deployment.</span></span></div>
+      </div>
+      <div class="pub"><div class="pt">Beyond One Granularity: Spectral Ensemble and Consensus Expansion for Training-Free Composed Image Retrieval</div>
+        <div class="pv"><span class="tag fa"><span data-zh>共同一作</span><span data-en>Co-first author</span></span><span class="tag ccfa">CCF A</span><span class="tag oral">Oral</span><span class="vn">ACM MM 2026</span><a href="papers/BeyondOneGranularity-ACMMM2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3767308.3835648" target="_blank" rel="noopener">DOI ↗</a></div>
+        <div class="fr"><span class="lb"><span data-zh>问题</span><span data-en>Problem</span></span><span><span data-zh>免训练组合图像检索用单一固定的投影粒度对齐图文特征：粗粒度丢失细节，细粒度放大噪声。</span><span data-en>Training-free composed image retrieval aligns image and text features at one fixed projection granularity; coarse levels lose detail and fine levels amplify noise.</span></span></div>
+        <div class="fr"><span class="lb"><span data-zh>方法</span><span data-en>Approach</span></span><span><span data-zh>MACE 在多个嵌套截断层级上构造谱集成并融合得分；CGCQE 只用在各粒度上排名一致的候选做查询扩展，抑制单一粒度的误检。</span><span data-en>MACE fuses scores from a spectral ensemble over nested truncation levels; CGCQE expands the query only with candidates that rank consistently across granularities.</span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="pub-group">
+    <div class="pub-glabel"><span class="pip acc"></span><span data-zh>其他录用论文（6 篇）</span><span data-en>Other accepted papers (6)</span></div>
+    <div class="publist">
+      <div class="pub"><div class="pt">RunbookFX: Type- and Effect-Safe LLM Synthesis for Executable Incident Diagnosis and Mitigation</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="vn">PACMPL Vol. 10 · ICFP 2026</span><span class="tag dir"><span data-zh>可验证的智能体动作</span><span data-en>Verifiable agent actions</span></span><a href="papers/RunbookFX-ICFP2026.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="https://doi.org/10.1145/3828675" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">ARGUS: Argumentation-Based Minimal-Change Repair for Verifiable LLM Self-Explanations</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfa">CORE A</span><span class="tag ccfb">CCF B</span><span class="vn">UAI 2026</span><a href="papers/ARGUS-UAI2026.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
+      <div class="pub"><div class="pt">Fuzzy-Gated Verification of LLM Agents for Industrial Fault Diagnosis: An Evolutionary-Optimized Closed-Loop Framework</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag q1"><span data-zh>JCR Q1 · 中科院 2 区 Top</span><span data-en>JCR Q1 · CAS Tier 2 (Top)</span></span><span class="vn">Applied Soft Computing 2026</span><span class="tag"><span data-zh>已录用</span><span data-en>Accepted</span></span><a href="papers/CL-LLMOps-ASOC2026-accepted-manuscript.pdf" target="_blank" rel="noopener">PDF ↗</a></div></div>
+      <div class="pub"><div class="pt">Knowledge Fusion in Deep Learning-based Medical Vision-Language Models: A Review</div>
+        <div class="pv"><span class="tag ccfc"><span data-zh>综述</span><span data-en>Survey</span></span><span class="tag q1">SCI Q1</span><span class="vn">Information Fusion</span><a href="https://doi.org/10.1016/j.inffus.2025.103455" target="_blank" rel="noopener">DOI ↗</a></div></div>
+      <div class="pub"><div class="pt">A Bidirectional Uncertainty-Suppressed Cross-Attention Network for EEG Classification</div>
+        <div class="pv"><span class="tag"><span data-zh>四作</span><span data-en>4th author</span></span><span class="tag ccfb">CCF B</span><span class="vn">IEEE BIBM 2026</span></div></div>
+      <div class="pub"><div class="pt">Time Series Anomaly Detection: A Hybrid Deep Learning Framework with Adaptive Thresholding for Electricity Industry Data</div>
+        <div class="pv"><span class="tag fa"><span data-zh>一作</span><span data-en>1st author</span></span><span class="tag ccfc">CCF C</span><span class="vn">IEEE CSCloud 2025</span><a href="https://doi.org/10.1109/CSCLOUD66326.2025.00046" target="_blank" rel="noopener">DOI ↗</a></div></div>
+    </div>
   </div>
 
-  <div class="ip-line"><span data-zh><b>知识产权</b>：软件著作权 <b>5 项</b> · 发明专利 <b>10+ 项</b>。</span><span data-en><b>Intellectual property</b>: <b>5</b> registered software copyrights · <b>10+</b> invention patents.</span></div>
+  <div class="ip-line"><span data-zh><b>知识产权</b>：发明专利 <b>10+ 项</b>。</span><span data-en><b>Intellectual property</b>: <b>10+</b> invention patents.</span></div>
 </div></section>
 
 <section class="sec" id="edu"><div class="wrap">
@@ -345,45 +366,8 @@ html[lang="en"] [data-zh]{display:none}
   </div>
 </div></section>
 
-<section class="sec alt" id="exp"><div class="wrap">
-  <div class="sec-h"><span class="idx">05</span><h2><span data-zh>项目经历</span><span data-en>Projects</span></h2><span class="ln"></span></div>
-  <p class="sec-lead"><span data-zh>三个落地项目有同一个难点：把大模型放进真实业务流程时，它的输出要能被检查，出错时要有确定的兜底。</span><span data-en>The three deployed projects share one difficulty: once an LLM sits inside a real workflow, its output has to be checkable, and failures need a deterministic fallback.</span></p>
-  <div class="tl">
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>国网西藏电力 · 大模型智能运维平台</span><span data-en>State Grid Tibet · LLM-Assisted IT Operations Platform</span></div><div class="dt">2025.11 – 2026.05</div></div>
-      <div class="rl"><span data-zh>项目负责人 / 技术架构。现场与外网隔离，平台必须离线部署，并调用客户内网的大模型。</span><span data-en>Project lead and system architect. The site is air-gapped, so the platform had to run offline and call the customer's intranet LLM.</span></div>
-      <ul class="bl">
-        <li><span data-zh><b>架构</b>：主机侧采集 Agent + Flask 诊断平台，全套离线安装；接入客户内网电力大模型网关（Qwen2-VL-7B-Instruct，OpenAI 兼容接口），用于运维问答、巡检报告生成和监控分析。</span><span data-en><b>Architecture</b>: host-side collection agents plus a Flask diagnosis platform, installed fully offline; integrated the customer's intranet power-domain LLM gateway (Qwen2-VL-7B-Instruct, OpenAI-compatible API) for O&amp;M QA, inspection reports and monitoring analysis.</span></li>
-        <li><span data-zh><b>可控执行</b>：模型输出强制为 JSON，解析失败回退规则；修复动作以规则决策树为准，危险命令在执行前拦截。大模型负责分析和建议，执行与否由可检查的规则决定。</span><span data-en><b>Controlled execution</b>: model output must be JSON, with rule fallback on parse failure; remediation follows a rule decision tree, and dangerous commands are blocked before execution. The LLM analyzes and suggests; checkable rules decide what runs.</span></li>
-        <li><span data-zh><b>规模</b>：知识库含 20 类故障模式、20 条标准处置流程（SOP）、16 个历史案例；平台核心代码约 1.6 万行，从 v5.29 迭代到 v6.0（30 余个版本），整理离线部署经验 9 条。</span><span data-en><b>Scale</b>: a knowledge base of 20 fault patterns, 20 SOPs and 16 historical cases; about 16k lines of core platform code, iterated from v5.29 to v6.0 (30+ releases), with 9 documented offline-deployment lessons.</span></li>
-      </ul>
-      <div class="kw"><span>LLM Agent</span><span data-zh>规则兜底</span><span data-en>Rule fallback</span><span data-zh>离线部署</span><span data-en>Offline deployment</span><span>Qwen2-VL-7B</span></div>
-    </div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>北京市科技计划课题 · AI 智能随访平台</span><span data-en>Beijing S&amp;T Program · AI Patient Follow-up Platform</span></div><div class="dt">2026.01 – 2026.08</div></div>
-      <div class="rl"><span data-zh>主要开发者，平台 1.0 设计方案作者。课题面向不孕不育症和儿童恶性肿瘤随访队列，要把可穿戴设备数据、随访问卷和医生处置串成闭环。</span><span data-en>Main developer and author of the platform 1.0 design. The project serves infertility and pediatric-cancer follow-up cohorts and links wearable data, questionnaires and clinician actions into one loop.</span></div>
-      <ul class="bl">
-        <li><span data-zh><b>设备接入</b>：打通 4 款设备、3 条数据链路并上线生产：手表经 BLE 接入微信小程序；诊脉仪导出包在浏览器端解析；4G 手表以 protobuf 二进制直传，服务端解码入库。其中 2 款设备持二类医疗器械证。</span><span data-en><b>Device integration</b>: four devices over three data paths, all in production: watches via BLE to a WeChat mini-program; pulse-diagnosis exports parsed in the browser; a 4G watch streaming binary protobuf to a server-side decoder. Two devices hold Class II medical-device certification.</span></li>
-        <li><span data-zh><b>LLM 分诊的安全外壳</b>（接 DeepSeek）：急症由确定性规则先判，命中即不调用模型；发送前去除患者身份信息；模型输出再做内容检查，异常转人工；全程留痕，用 71 条分诊测试句做回归。</span><span data-en><b>Safety shell for LLM triage</b> (DeepSeek): deterministic rules handle emergencies before any model call; patient identifiers are stripped before sending; model output is checked and routed to a human on failure; every step is logged, with 71 triage test sentences as a regression suite.</span></li>
-        <li><span data-zh><b>平台 1.0</b>：报警闭环状态机与佩戴依从性统计，2026 年 7 月上线生产。</span><span data-en><b>Platform 1.0</b>: an alarm closed-loop state machine and wear-compliance tracking, in production since July 2026.</span></li>
-      </ul>
-      <div class="kw"><span data-zh>LLM 安全护栏</span><span data-en>LLM guardrails</span><span data-zh>医疗 AI</span><span data-en>Medical AI</span><span data-zh>多设备数据链路</span><span data-en>Multi-device data paths</span></div>
-    </div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>南方电网科技项目 · 孪生体多维数据融合分析原型系统</span><span data-en>China Southern Power Grid R&amp;D · Data-Fusion Prototype for Asset Digital Twins</span></div><div class="dt">2026.01 – 2026.09</div></div>
-      <div class="rl"><span data-zh>原型系统主要开发者，负责数据建模、接口开发、性能测试与第三方检测配合。电网资产数据分散在 22 个业务域的架构成果中，需要自动归并成一套统一数据模型，并支撑孪生体的融合查询。</span><span data-en>Main developer of the prototype: data modeling, APIs, performance testing and third-party test support. Grid asset data sits in architecture artifacts from 22 business domains and had to be merged automatically into one data model that serves fused queries for the digital twin.</span></div>
-      <ul class="bl">
-        <li><span data-zh><b>数据模型自动构建</b>：中文句向量（text2vec）→ 自适应层次聚类（大簇递归切分）→ 大模型命名（失败回退规则）→ 生成对象、概念、逻辑、物理三层关联并留痕；统一模型每 6 小时自动重建。建成 134 个对象、138,929 条关联、2,133 万条取值。</span><span data-en><b>Automatic data-model construction</b>: Chinese sentence embeddings (text2vec) → adaptive hierarchical clustering with recursive splitting → LLM naming with rule fallback → traced object–concept–logical–physical links; the unified model rebuilds every 6 hours. Result: 134 objects, 138,929 links and 21.3M values.</span></li>
-        <li><span data-zh><b>查询加速</b>：按视点切片，每片建布隆摘要，查询先剪枝再扫描。</span><span data-en><b>Query acceleration</b>: per-viewpoint slices with Bloom-filter summaries, so queries prune slices before scanning.</span></li>
-        <li><span data-zh><b>第三方检测 125 项指标全部通过</b>：50 并发持续 20 分钟，平均 18,039 QPS；点查 0.043 s、关联查询 0.039 s；3 轮各 2 小时的可靠性测试共 329.7 万笔请求，失败 1 笔。</span><span data-en><b>Passed all 125 indicators in third-party testing</b>: 18,039 QPS on average at 50 concurrent clients for 20 minutes; 0.043 s point queries and 0.039 s join queries; 1 failure in 3.30M requests over three 2-hour reliability runs.</span></li>
-      </ul>
-      <div class="kw"><span data-zh>数字孪生</span><span data-en>Digital twin</span><span data-zh>语义聚类 + LLM</span><span data-en>Semantic clustering + LLM</span><span data-zh>第三方检测</span><span data-en>Third-party tested</span></div>
-    </div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>南方电网“大瓦特”电力多模态大模型</span><span data-en>CSG “BigWatt” Multimodal Power LLM</span></div><div class="dt"><span data-zh>项目</span><span data-en>Project</span></div></div><div class="ds"><span data-zh>承担预训练 / 指令微调 / 后训练（RLHF）与领域数据清洗 pipeline 的研发。</span><span data-en>Built the pre-training / instruction-tuning / RLHF and domain data-cleaning pipeline.</span></div></div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>北京大学第一医院 · 医疗多模态（MedCLIP）</span><span data-en>Peking University First Hospital · Medical Multimodal (MedCLIP)</span></div><div class="dt"><span data-zh>项目</span><span data-en>Project</span></div></div><div class="ds"><span data-zh>完成 MedCLIP 全流程训练与医学场景参数高效微调（PEFT / LoRA）。</span><span data-en>End-to-end MedCLIP training and parameter-efficient fine-tuning (PEFT / LoRA) for clinical use.</span></div></div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>清华大学深圳国际研究生院 · 助理研究员</span><span data-en>Tsinghua Shenzhen Int'l Graduate School · Research Assistant</span></div><div class="dt">2023.06 – 2023.08</div></div><div class="ds"><span data-zh>参与多模态电力大模型的预训练 / SFT / RLHF 全流程与领域数据清洗，形成论文 1 篇。</span><span data-en>Full pipeline of a multimodal power-domain LLM (pre-training / SFT / RLHF) and domain data cleaning; one resulting paper.</span></div></div>
-  </div>
-</div></section>
-
 <section class="sec" id="skills"><div class="wrap">
-  <div class="sec-h"><span class="idx">06</span><h2><span data-zh>专业技能</span><span data-en>Skills</span></h2><span class="ln"></span></div>
+  <div class="sec-h"><span class="idx">05</span><h2><span data-zh>专业技能</span><span data-en>Skills</span></h2><span class="ln"></span></div>
   <div class="skills">
     <div class="srow"><div class="k"><span data-zh>大模型</span><span data-en>LLM</span></div><div class="sk"><span>Pre-training</span><span>SFT</span><span>RLHF / RLAIF</span><span>LoRA / PEFT</span><span>Multimodal VLM</span><span>Agentic RL</span><span data-zh>可扩展 / 弱监督</span><span data-en>Scalable / Weak Supervision</span><span>Conformal Calibration</span></div></div>
     <div class="srow"><div class="k"><span data-zh>工程</span><span data-en>Engineering</span></div><div class="sk"><span>PyTorch</span><span>Transformers</span><span>PEFT / TRL</span><span>Unsloth</span><span>vLLM</span><span data-zh>分布式训练</span><span data-en>Distributed training</span><span>Git</span><span>Linux</span></div></div>
@@ -393,7 +377,7 @@ html[lang="en"] [data-zh]{display:none}
 </div></section>
 
 <section class="sec alt" id="honors"><div class="wrap">
-  <div class="sec-h"><span class="idx">07</span><h2><span data-zh>荣誉奖励</span><span data-en>Honors &amp; Awards</span></h2><span class="ln"></span></div>
+  <div class="sec-h"><span class="idx">06</span><h2><span data-zh>荣誉奖励</span><span data-en>Honors &amp; Awards</span></h2><span class="ln"></span></div>
   <div class="honors">
     <div class="honor"><span class="st">▸</span><span><span data-zh>北京大学学术创新奖 · 北京大学社会工作奖（2025—2026 学年，初评入选）</span><span data-en>PKU Academic Innovation Award · PKU Social Work Award (2025–2026; college preliminary selection passed)</span></span></div>
     <div class="honor"><span class="st">▸</span><span><span data-zh>博士研究生国家奖学金 · 本科生国家奖学金</span><span data-en>National Scholarship — Doctoral & Undergraduate</span></span></div>
