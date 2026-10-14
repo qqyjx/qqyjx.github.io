@@ -224,6 +224,7 @@ html[lang="en"] [data-zh]{display:none}
     <a href="#research"><span data-zh>研究</span><span data-en>research</span></a>
     <a href="#news"><span data-zh>动态</span><span data-en>news</span></a>
     <a href="#exp"><span data-zh>项目</span><span data-en>projects</span></a>
+    <a href="#oss"><span data-zh>开源</span><span data-en>open source</span></a>
     <a href="#skills"><span data-zh>技能</span><span data-en>skills</span></a>
     <a href="#honors"><span data-zh>荣誉</span><span data-en>honors</span></a>
   </nav>
@@ -423,18 +424,66 @@ html[lang="en"] [data-zh]{display:none}
       </ul>
       <div class="kw"><span>Frontier labs</span><span>RSI</span><span>Agent safety</span><span>Videos · podcasts</span><span>Daily arXiv feed</span></div>
     </div>
-    <div class="item"><div class="hd"><div class="ti"><span data-zh>开源论文代码与方法 Demo</span><span data-en>Open-Source Paper Code and Method Demos</span></div><div class="dt"><span data-zh>2026</span><span data-en>2026</span></div></div>
+  </div>
+</div></section>
+
+<section class="sec" id="oss"><div class="wrap">
+  <div class="sec-h"><span class="idx">06</span><h2><span data-zh>开源贡献</span><span data-en>Open-Source Contribution</span></h2><span class="ln"></span></div>
+  <p class="sec-lead"><span data-zh>以下仓库均为本人创建并维护；方法 Demo 离线运行、使用合成数据、附单元测试，不含论文结果数字。</span><span data-en>All repositories below are created and maintained by me. Method demos run offline on synthetic data with unit tests and contain no paper result numbers.</span></p>
+  <div class="tl">
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>ScholarForge：基于 Claude Code 的科研全生命周期 Agentic 系统</span><span data-en>ScholarForge: An Agentic Research-Lifecycle System on Claude Code</span></div><div class="dt">GitHub · Owner</div></div>
       <ul class="bl">
-        <li><span data-zh><b>复现包</b>：CALM-TS（KDD 2026，含逐种子运行产物）、CodeFault（ASE 2026，Zenodo 归档 DOI 10.5281/zenodo.21700762）、CL-LLMOps（Applied Soft Computing）三篇论文的代码与复现材料。</span><span data-en><b>Replication packages</b>: code and replication material for CALM-TS (KDD 2026, with per-seed run artifacts), CodeFault (ASE 2026, Zenodo DOI 10.5281/zenodo.21700762) and CL-LLMOps (Applied Soft Computing).</span></li>
-        <li><span data-zh><b>方法 Demo</b>：ScholarForge、RunbookFX、PRV、ProgV-Trace、ARGUS、TransVAE-POT 六个离线最小实现：合成数据驱动、无需 API 密钥、共 200+ 个单元测试，不含任何论文结果数字；链接见个人主页。</span><span data-en><b>Method demos</b>: six offline minimal implementations (ScholarForge, RunbookFX, PRV, ProgV-Trace, ARGUS, TransVAE-POT): synthetic data, no API key, 200+ unit tests in total, no paper result numbers; links on the homepage.</span></li>
+        <li><span data-zh>设计并实现一个 Claude Code 插件：8 个阶段化 Skill（验收门、按需加载）、执行子代理与 7 个回归评测用例。</span><span data-en>Designed and built a Claude Code plugin: 8 stage-gated skills (acceptance gates, on-demand loading), an executor subagent and 7 regression eval cases.</span></li>
+        <li><span data-zh>开源 3 个代码化多智能体 workflow（投稿合规门禁、模拟审稿、跨仓库缺陷横扫），按角色绑定模型档位并限制并发。</span><span data-en>Released 3 multi-agent workflows in code (submission compliance gate, simulated review, cross-repository defect sweep), with a model tier per role and capped concurrency.</span></li>
+        <li><span data-zh>离线工具链：数值与运行产物的溯源审计、文风扫描、页数巡检；用埋入缺陷的合成论文做端到端演示，30 个单元测试。</span><span data-en>Offline toolchain: number-to-artifact provenance audit, style scan and page-limit sweep; an end-to-end demo on a synthetic paper with planted defects; 30 unit tests.</span></li>
       </ul>
-      <div class="kw"><span>Open source</span><span>Replication</span><span>Demos</span><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener"><span>CALM-TS Code ↗</span></a><a href="https://github.com/qqyjx/CodeFault" target="_blank" rel="noopener"><span>CodeFault Code ↗</span></a><a href="https://github.com/qqyjx/CL-LLMOps" target="_blank" rel="noopener"><span>CL-LLMOps Code ↗</span></a><a href="https://github.com/qqyjx/RunbookFX" target="_blank" rel="noopener"><span>RunbookFX Code ↗</span></a><a href="https://github.com/qqyjx/PRV-demo" target="_blank" rel="noopener"><span>PRV Code ↗</span></a><a href="https://github.com/qqyjx/ProgV-Trace-demo" target="_blank" rel="noopener"><span>ProgV-Trace Code ↗</span></a><a href="https://github.com/qqyjx/ARGUS-demo" target="_blank" rel="noopener"><span>ARGUS Code ↗</span></a><a href="https://github.com/qqyjx/TransVAE-POT-demo" target="_blank" rel="noopener"><span>TransVAE-POT Code ↗</span></a></div>
+      <div class="kw"><a href="https://github.com/qqyjx/ScholarForge" target="_blank" rel="noopener"><span>ScholarForge ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>RunbookFX：类型与效应安全的 LLM 故障处置程序合成（PACMPL / ICFP 2026）</span><span data-en>RunbookFX: Type- and Effect-Safe LLM Synthesis of Incident Runbooks (PACMPL / ICFP 2026)</span></div><div class="dt">GitHub · Owner</div></div>
+      <ul class="bl">
+        <li><span data-zh>实现类型化 runbook DSL 与类型—效应检查器：风险 × 能力 × 回滚次数的乘积效应代数，回滚令牌按仿射资源管理。</span><span data-en>Implemented a typed runbook DSL and a type-and-effect checker: a product effect algebra of risk × capabilities × rollback count, with rollback tokens as affine resources.</span></li>
+        <li><span data-zh>CEGIS 式合成闭环：模拟 LLM 生成候选，检查器的失败报告驱动多轮修复，通过者在故障模拟器中执行并可回滚；22 个单元测试。</span><span data-en>A CEGIS-style synthesis loop: a mock LLM proposes candidates, checker failure reports drive repair rounds, and accepted programs run in an incident simulator with rollback; 22 unit tests.</span></li>
+      </ul>
+      <div class="kw"><a href="https://github.com/qqyjx/RunbookFX" target="_blank" rel="noopener"><span>RunbookFX ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>PRV：长视频音视频证据推理的“计划—检索—验证”智能体（ACM MM 2026）</span><span data-en>PRV: A Plan-Retrieve-Verify Agent for Long-Video Audio-Visual Evidence Reasoning (ACM MM 2026)</span></div><div class="dt">GitHub · Owner</div></div>
+      <ul class="bl">
+        <li><span data-zh>实现“计划 → 检索 → 验证 → 反向检索”工具调用闭环与 6 个工具，证据不足或矛盾时拒答。</span><span data-en>Implemented the plan → retrieve → verify → counter-retrieve tool-calling loop with 6 tools and abstention on missing or contradictory evidence.</span></li>
+        <li><span data-zh>实现 5 类反事实轨迹扰动，输出规划、选工具、验证等中间决策的监督记录；37 个单元测试。</span><span data-en>Implemented 5 counterfactual trajectory perturbations that emit supervision records for planning, tool choice and verification decisions; 37 unit tests.</span></li>
+      </ul>
+      <div class="kw"><a href="https://github.com/qqyjx/PRV-demo" target="_blank" rel="noopener"><span>PRV-demo ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>ProgV-Trace：可执行验证程序驱动的视频虚假信息归因（ACM MM 2026）</span><span data-en>ProgV-Trace: Executable Verification Programs for Video Misinformation Attribution (ACM MM 2026)</span></div><div class="dt">GitHub · Owner</div></div>
+      <ul class="bl">
+        <li><span data-zh>实现 6 个算子的类型化验证 DSL、类型检查器与多模态溯源图解释器。</span><span data-en>Implemented a typed 6-operator verification DSL, its type checker and a multimodal provenance-graph interpreter.</span></li>
+        <li><span data-zh>以逐元素最小反事实干预计算责任分数，并把推理蒸馏为无需 LLM 的小型验证器；64 个单元测试。</span><span data-en>Computed per-element responsibility scores by minimal counterfactual interventions and distilled the reasoning into a small LLM-free verifier; 64 unit tests.</span></li>
+      </ul>
+      <div class="kw"><a href="https://github.com/qqyjx/ProgV-Trace-demo" target="_blank" rel="noopener"><span>ProgV-Trace-demo ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>ARGUS：可验证 LLM 自解释的论辩式最小改动修复（UAI 2026）</span><span data-en>ARGUS: Argumentation-Based Minimal-Change Repair of LLM Self-Explanations (UAI 2026)</span></div><div class="dt">GitHub · Owner</div></div>
+      <ul class="bl">
+        <li><span data-zh>实现 Dung 论辩框架的 grounded / preferred / stable 语义与可验证性判定。</span><span data-en>Implemented grounded, preferred and stable semantics of Dung argumentation frameworks and the verifiability check.</span></li>
+        <li><span data-zh>在 3 种代价模型下精确搜索最小改动修复，并在 40 个随机框架上与无剪枝穷举交叉核验；39 个单元测试。</span><span data-en>Exact minimal-change repair search under 3 cost models, cross-checked against unpruned enumeration on 40 random frameworks; 39 unit tests.</span></li>
+      </ul>
+      <div class="kw"><a href="https://github.com/qqyjx/ARGUS-demo" target="_blank" rel="noopener"><span>ARGUS-demo ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>TransVAE-POT：电力时序异常检测的 Transformer-VAE 与极值自适应阈值（IEEE CSCloud 2025）</span><span data-en>TransVAE-POT: Transformer-VAE with Extreme-Value Adaptive Thresholds for Power Time-Series Anomaly Detection (IEEE CSCloud 2025)</span></div><div class="dt">GitHub · Owner</div></div>
+      <ul class="bl">
+        <li><span data-zh>用 PyTorch 实现 Transformer 编解码的 VAE 重构评分；以 POT 与广义帕累托分布拟合分数尾部，按风险水平自动定阈值；17 个单元测试。</span><span data-en>A PyTorch Transformer-encoder/decoder VAE for reconstruction scores; POT with a Generalized Pareto tail fit sets the threshold from a risk level; 17 unit tests.</span></li>
+      </ul>
+      <div class="kw"><a href="https://github.com/qqyjx/TransVAE-POT-demo" target="_blank" rel="noopener"><span>TransVAE-POT-demo ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>论文复现包：CALM-TS（KDD 2026）· CodeFault（ASE 2026）· CL-LLMOps（ASOC）</span><span data-en>Replication Packages: CALM-TS (KDD 2026) · CodeFault (ASE 2026) · CL-LLMOps (ASOC)</span></div><div class="dt">GitHub · Owner</div></div>
+      <ul class="bl">
+        <li><span data-zh>公开三篇论文的代码与复现材料：CALM-TS 含逐种子运行产物；CodeFault 复现包在 Zenodo 归档（DOI 10.5281/zenodo.21700762）。</span><span data-en>Code and replication material for three papers: CALM-TS with per-seed run artifacts; the CodeFault package archived on Zenodo (DOI 10.5281/zenodo.21700762).</span></li>
+      </ul>
+      <div class="kw"><a href="https://github.com/qqyjx/CALM-TS" target="_blank" rel="noopener"><span>CALM-TS ↗</span></a><a href="https://github.com/qqyjx/CodeFault" target="_blank" rel="noopener"><span>CodeFault ↗</span></a><a href="https://github.com/qqyjx/CL-LLMOps" target="_blank" rel="noopener"><span>CL-LLMOps ↗</span></a></div>
     </div>
   </div>
 </div></section>
 
-<section class="sec" id="skills"><div class="wrap">
-  <div class="sec-h"><span class="idx">06</span><h2><span data-zh>专业技能</span><span data-en>Skills</span></h2><span class="ln"></span></div>
+<section class="sec alt" id="skills"><div class="wrap">
+  <div class="sec-h"><span class="idx">07</span><h2><span data-zh>专业技能</span><span data-en>Skills</span></h2><span class="ln"></span></div>
   <div class="skills">
     <div class="srow"><div class="k"><span data-zh>大模型</span><span data-en>LLM</span></div><div class="sk"><span>Pre-training</span><span>SFT</span><span>RLHF / RLAIF</span><span>LoRA / PEFT</span><span>Multimodal VLM</span><span>Agentic RL</span><span data-zh>可扩展 / 弱监督</span><span data-en>Scalable / Weak Supervision</span><span>Conformal Calibration</span></div></div>
     <div class="srow"><div class="k"><span data-zh>工程</span><span data-en>Engineering</span></div><div class="sk"><span>PyTorch</span><span>Transformers</span><span>PEFT / TRL</span><span>Unsloth</span><span>vLLM</span><span data-zh>分布式训练</span><span data-en>Distributed training</span><span>Git</span><span>Linux</span></div></div>
@@ -444,8 +493,8 @@ html[lang="en"] [data-zh]{display:none}
   </div>
 </div></section>
 
-<section class="sec alt" id="honors"><div class="wrap">
-  <div class="sec-h"><span class="idx">07</span><h2><span data-zh>荣誉奖励</span><span data-en>Honors &amp; Awards</span></h2><span class="ln"></span></div>
+<section class="sec" id="honors"><div class="wrap">
+  <div class="sec-h"><span class="idx">08</span><h2><span data-zh>荣誉奖励</span><span data-en>Honors &amp; Awards</span></h2><span class="ln"></span></div>
   <div class="honors">
     <div class="honor"><span class="st">▸</span><span><span data-zh>博士研究生国家奖学金 · 本科生国家奖学金</span><span data-en>National Scholarship — Doctoral & Undergraduate</span></span></div>
     <div class="honor"><span class="st">▸</span><span><span data-zh>全国大学生电子设计竞赛 二等奖</span><span data-en>National Electronic Design Contest — 2nd Prize</span></span></div>
