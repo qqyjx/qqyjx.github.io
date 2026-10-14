@@ -429,7 +429,7 @@ html[lang="en"] [data-zh]{display:none}
 
 <section class="sec" id="oss"><div class="wrap">
   <div class="sec-h"><span class="idx">06</span><h2><span data-zh>开源贡献</span><span data-en>Open-Source Contribution</span></h2><span class="ln"></span></div>
-  <p class="sec-lead"><span data-zh>以下仓库均为本人创建并维护；方法 Demo 离线运行、使用合成数据、附单元测试，不含论文结果数字。</span><span data-en>All repositories below are created and maintained by me. Method demos run offline on synthetic data with unit tests and contain no paper result numbers.</span></p>
+  <p class="sec-lead"><span data-zh>除 SWE-bench 问题报告外，以下仓库均为本人创建并维护；方法 Demo 离线运行、使用合成数据、附单元测试，不含论文结果数字。</span><span data-en>Apart from the SWE-bench issue report, all repositories below are created and maintained by me. Method demos run offline on synthetic data with unit tests and contain no paper result numbers.</span></p>
   <div class="tl">
     <div class="item"><div class="hd"><div class="ti"><span data-zh>ScholarForge：基于 Claude Code 的科研全生命周期 Agentic 系统</span><span data-en>ScholarForge: An Agentic Research-Lifecycle System on Claude Code</span></div><div class="dt">GitHub · Owner</div></div>
       <ul class="bl">
@@ -438,6 +438,12 @@ html[lang="en"] [data-zh]{display:none}
         <li><span data-zh>离线工具链：数值与运行产物的溯源审计、文风扫描、页数巡检；用埋入缺陷的合成论文做端到端演示，30 个单元测试。</span><span data-en>Offline toolchain: number-to-artifact provenance audit, style scan and page-limit sweep; an end-to-end demo on a synthetic paper with planted defects; 30 unit tests.</span></li>
       </ul>
       <div class="kw"><a href="https://github.com/qqyjx/ScholarForge" target="_blank" rel="noopener"><span>ScholarForge ↗</span></a></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>SWE-bench 评测打分正确性问题报告</span><span data-en>SWE-bench Grading Correctness Report</span></div><div class="dt"><span data-zh>SWE-bench · 问题报告</span><span data-en>SWE-bench · Issue report</span></div></div>
+      <ul class="bl">
+        <li><span data-zh>在 SWE-bench 打分环节发现一处正确性问题：特定条件下，测试实际失败的补丁可被判为“已解决”。</span><span data-en>Found a correctness issue in SWE-bench grading: under specific conditions a patch whose tests actually fail can be scored as resolved.</span></li>
+        <li><span data-zh>在 docker 中端到端复现，并向维护者私下报告复现步骤与修复建议；修复前不公开技术细节。</span><span data-en>Reproduced it end to end in Docker and reported it privately to the maintainers with reproduction steps and a suggested fix; technical details stay private until a fix lands.</span></li>
+      </ul>
     </div>
     <div class="item"><div class="hd"><div class="ti"><span data-zh>RunbookFX：类型与效应安全的 LLM 故障处置程序合成（PACMPL / ICFP 2026）</span><span data-en>RunbookFX: Type- and Effect-Safe LLM Synthesis of Incident Runbooks (PACMPL / ICFP 2026)</span></div><div class="dt">GitHub · Owner</div></div>
       <ul class="bl">
