@@ -397,6 +397,32 @@ html[lang="en"] [data-zh]{display:none}
       </ul>
       <div class="kw"><span>Model routing</span><span>Codex</span><span>MCP</span><span>Persistent memory</span><span>Config as code</span></div>
     </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>国网西藏电力 · 大模型智能运维平台（全离线部署）</span><span data-en>State Grid Tibet: LLM-Assisted IT Operations Platform (fully offline)</span></div><div class="dt"><span data-zh>2025.11 – 2026.05</span><span data-en>2025.11 – 2026.05</span></div></div>
+      <div class="rl"><span data-zh>项目负责人 / 技术架构。现场与外网物理隔离，平台全离线部署，并调用客户内网的多模态大模型。</span><span data-en>Project lead and system architect. The site is air-gapped, so the platform runs fully offline and calls the customer's intranet multimodal LLM.</span></div>
+      <ul class="bl">
+        <li><span data-zh><b>系统架构</b>：主机侧采集 Agent + Flask 诊断服务，全套离线安装；接入客户内网 Qwen2-VL-7B 网关（OpenAI 兼容接口），支撑运维问答、巡检报告生成与监控分析。</span><span data-en><b>Architecture</b>: host-side collection agents plus a Flask diagnosis service, installed fully offline; integrated the customer's intranet Qwen2-VL-7B gateway (OpenAI-compatible API) for O&amp;M QA, inspection reports and monitoring analysis.</span></li>
+        <li><span data-zh><b>可控执行（Guardrails）</b>：模型输出强制为 JSON，解析失败回退规则引擎；修复动作由规则决策树裁决，高危命令在执行前拦截。LLM 负责分析与建议，是否执行由可检查的规则决定。</span><span data-en><b>Controlled execution (guardrails)</b>: model output must be JSON, with a rule-engine fallback on parse failure; remediation follows a rule decision tree, and high-risk commands are blocked before execution. The LLM analyses and suggests; checkable rules decide what runs.</span></li>
+        <li><span data-zh><b>知识库与交付</b>：20 类故障模式、20 条标准处置流程（SOP）、16 个历史案例；核心代码约 1.6 万行，迭代 30 余个版本。</span><span data-en><b>Knowledge base and delivery</b>: 20 fault patterns, 20 standard operating procedures and 16 historical cases; about 16k lines of core code over 30+ releases.</span></li>
+      </ul>
+      <div class="kw"><span>LLM agent</span><span>Rule fallback</span><span>Offline deployment</span><span>Qwen2-VL-7B</span></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>北京市科技计划课题 · AI 智能随访平台</span><span data-en>Beijing S&amp;T Program: AI Patient Follow-up Platform</span></div><div class="dt"><span data-zh>2026.01 – 2026.08</span><span data-en>2026.01 – 2026.08</span></div></div>
+      <div class="rl"><span data-zh>主要开发者、平台 1.0 设计方案作者。面向不孕不育症与儿童恶性肿瘤随访队列，打通可穿戴设备数据、随访问卷与医生处置。</span><span data-en>Main developer and author of the platform 1.0 design, for infertility and pediatric-cancer follow-up cohorts; connects wearable data, follow-up questionnaires and clinician actions.</span></div>
+      <ul class="bl">
+        <li><span data-zh><b>多源设备接入</b>：4 款设备、3 条数据链路上线生产（BLE → 小程序、导出包解析、4G 手表 protobuf 直传），其中 2 款持二类医疗器械证。</span><span data-en><b>Multi-device integration</b>: four devices over three data paths in production (BLE to a WeChat mini-program, export-package parsing, 4G-watch protobuf streaming); two hold Class II medical-device certification.</span></li>
+        <li><span data-zh><b>LLM 分诊安全外壳</b>：急症先走确定性规则，命中即不调用模型；外发前去标识化；输出经内容校验，异常转人工；全链路审计留痕，配 71 句回归测试集。</span><span data-en><b>LLM triage safety shell</b>: deterministic rules handle emergencies before any model call; identifiers are stripped before sending; output is checked and failures go to a human; full audit trail; 71-sentence regression suite.</span></li>
+        <li><span data-zh><b>平台 1.0</b>：报警闭环状态机与佩戴依从性统计，2026 年 7 月上线生产。</span><span data-en><b>Platform 1.0</b>: alarm closed-loop state machine and wear-compliance tracking, in production since July 2026.</span></li>
+      </ul>
+      <div class="kw"><span>Medical devices</span><span>LLM safety shell</span><span>De-identification</span><span>Production</span></div>
+    </div>
+    <div class="item"><div class="hd"><div class="ti"><span data-zh>南方电网 · 数字孪生企业架构平台（孪生体多维数据融合分析原型系统）</span><span data-en>China Southern Power Grid: Digital-Twin Enterprise Architecture Platform (multi-dimensional data-fusion prototype)</span></div><div class="dt"><span data-zh>2026.01 – 2026.09</span><span data-en>2026.01 – 2026.09</span></div></div>
+      <div class="rl"><span data-zh>原型系统主要开发者，负责数据建模、接口开发、性能测试与第三方检测配合；把 22 个业务域的企业架构成果融合为统一的孪生体数据模型。</span><span data-en>Main developer of the prototype: data modelling, APIs, performance testing and third-party test support; fuses enterprise-architecture results from 22 business domains into one digital-twin data model.</span></div>
+      <ul class="bl">
+        <li><span data-zh><b>数据模型自动构建</b>：句向量 → 自适应层次聚类 → 大模型命名（失败回退规则）→ 三层关联留痕，每 6 小时重建；22 个业务域建成 134 个对象、138,929 条关联、2,133 万条取值。</span><span data-en><b>Automatic data-model construction</b>: sentence embeddings → adaptive hierarchical clustering → LLM naming with rule fallback → traced three-level links, rebuilt every 6 hours; 22 business domains yield 134 objects, 138,929 links and 21.3M values.</span></li>
+        <li><span data-zh><b>第三方检测</b>：125 项指标全部通过；50 并发持续 20 分钟平均 18,039 QPS，点查询 0.043 s；6 小时可靠性测试 329.7 万笔请求仅 1 笔失败。</span><span data-en><b>Third-party testing</b>: all 125 indicators passed; 18,039 QPS on average at 50 concurrent clients for 20 minutes, 0.043 s point queries; 1 failure in 3.30M requests over a 6-hour reliability test.</span></li>
+      </ul>
+      <div class="kw"><span>Digital twin</span><span>Semantic clustering + LLM</span><span>Third-party testing</span></div>
+    </div>
     <div class="item"><div class="hd"><div class="ti"><span data-zh>前沿工程实践内化：Anthropic Engineering → 个人工作流</span><span data-en>Frontier Engineering Practice: Anthropic Engineering → My Workflow</span></div><div class="dt"><span data-zh>2025.02 – 至今</span><span data-en>2025.02 – Present</span></div></div>
       <div class="rl"><span data-zh>系统研读 Anthropic Engineering 与 claude.dev 工程博客，把其中的方法转写为可执行的规则、脚本与工作流并长期运行。</span><span data-en>Studied the Anthropic Engineering and claude.dev blogs systematically and turned their methods into executable rules, scripts and workflows in continuous use.</span></div>
       <ul class="bl">
