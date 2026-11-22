@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>肖逸凡 Yifan Xiao · Self-Improving Agents</title>
-<meta name="description" content="肖逸凡 Yifan Xiao — 北京大学计算机软件博士生，研究自我改进的智能体：智能体强化学习、LLM 后训练、世界模型与递归自我改进（RSI）；ASE / KDD / ICFP / UAI / ACM MM 等顶会与期刊论文。">
+<title>肖逸凡 Yifan Xiao · Foundation Models &amp; World Models</title>
+<meta name="description" content="肖逸凡 Yifan Xiao — 北京大学计算机软件博士生，研究大模型基座与世界模型：LLM 基座模型的预训练与后训练、世界模型、智能体强化学习与递归自我改进（RSI）；ASE / KDD / ICFP / UAI / ACM MM 等顶会与期刊论文。">
 <link rel="canonical" href="https://qqyjx.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230D1421'/%3E%3Ctext x='32' y='42' font-size='26' text-anchor='middle' fill='%234CC6E8' font-family='Consolas,monospace' font-weight='bold'%3EYX%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -245,12 +245,12 @@ html[lang="en"] [data-zh]{display:none}
         <span data-en><b>Ph.D. Student</b>, Computer Software, <b>Peking University</b></span>
       </div>
       <div class="focus">
-        <div class="focus-h"><span class="k"><span data-zh>研究方向</span><span data-en>Research focus</span></span><b>Self-Improving Agents</b></div>
-        <div class="focus-sub"><span data-zh>让智能体从交互中获得经验，并通过后训练持续变强。</span><span data-en>Agents that learn from interaction and keep improving through post-training.</span></div>
+        <div class="focus-h"><span class="k"><span data-zh>研究方向</span><span data-en>Research focus</span></span><b>Foundation Models · World Models</b></div>
+        <div class="focus-sub"><span data-zh>研究 LLM 基座模型的预训练与后训练，以及供智能体学习和规划的世界模型。</span><span data-en>Pre-training and post-training of LLM foundation models, and world models that agents learn and plan with.</span></div>
         <div class="focus-pills">
-          <span>Agentic RL</span>
-          <span><span data-zh>LLM 后训练</span><span data-en>LLM Post-training</span></span>
+          <span><span data-zh>LLM 基座模型</span><span data-en>LLM Foundation Models</span></span>
           <span><span data-zh>世界模型</span><span data-en>World Models</span></span>
+          <span>Agentic RL</span>
           <span><span data-zh>递归自我改进 (RSI)</span><span data-en>Recursive Self-Improvement</span></span>
         </div>
       </div>
@@ -336,9 +336,9 @@ html[lang="en"] [data-zh]{display:none}
 <section class="sec alt" id="research"><div class="wrap">
   <div class="sec-h"><span class="idx">03</span><h2><span data-zh>研究方向</span><span data-en>Research Focus</span></h2><span class="ln"></span></div>
   <div class="pillars">
-    <div class="pillar"><div class="ic">01</div><h3><span data-zh>智能体强化学习</span><span data-en>Agentic RL</span></h3><p><span data-zh>长程信用分配、稀疏奖励、工具调用与多轮交互的强化学习，过程奖励与验证器的可靠性。</span><span data-en>Long-horizon credit assignment, sparse rewards, tool-use and multi-turn RL, and the reliability of process rewards and verifiers.</span></p></div>
-    <div class="pillar"><div class="ic">02</div><h3><span data-zh>LLM 后训练</span><span data-en>LLM Post-training</span></h3><p><span data-zh>GRPO / PPO / RLVR，能力涌现与技能组合，持续后训练与经验蒸馏。</span><span data-en>GRPO / PPO / RLVR, capability emergence and skill composition, continual post-training and experience distillation.</span></p></div>
-    <div class="pillar"><div class="ic">03</div><h3><span data-zh>世界模型</span><span data-en>World Models</span></h3><p><span data-zh>智能体世界模型、想象 rollout 与基于模型的规划，以及作为验证器的世界模型。</span><span data-en>Agent world models, imagined rollouts and model-based planning, and the world model as a verifier.</span></p></div>
+    <div class="pillar"><div class="ic">01</div><h3><span data-zh>LLM 基座模型</span><span data-en>LLM Foundation Models</span></h3><p><span data-zh>预训练的数据、目标与训练规模，基座能力的评测，以及预训练与后训练（SFT、RL）的衔接。</span><span data-en>Pre-training data, objectives and scale, evaluation of base-model capability, and how pre-training connects to post-training (SFT, RL).</span></p></div>
+    <div class="pillar"><div class="ic">02</div><h3><span data-zh>世界模型</span><span data-en>World Models</span></h3><p><span data-zh>世界模型基座及其规模化训练，智能体世界模型、想象 rollout 与基于模型的规划，以及作为验证器的世界模型。</span><span data-en>World-model foundation models and their scaling, agent world models, imagined rollouts and model-based planning, and the world model as a verifier.</span></p></div>
+    <div class="pillar"><div class="ic">03</div><h3><span data-zh>智能体强化学习与后训练</span><span data-en>Agentic RL &amp; Post-training</span></h3><p><span data-zh>长程信用分配、工具调用与多轮交互的强化学习，过程奖励与验证器的可靠性；GRPO / PPO / RLVR 与经验蒸馏。</span><span data-en>Long-horizon credit assignment, tool-use and multi-turn RL, the reliability of process rewards and verifiers; GRPO / PPO / RLVR and experience distillation.</span></p></div>
     <div class="pillar"><div class="ic">04</div><h3><span data-zh>递归自我改进（RSI）</span><span data-en>Recursive Self-Improvement (RSI)</span></h3><p><span data-zh>智能体从自身 rollout 中获得经验、经验证后回灌后训练，形成 rollout → 经验 → 验证 → 后训练 → 更强策略的闭环。</span><span data-en>Agents gain experience from their own rollouts, verify it, and feed it back into post-training: the rollout → experience → verifier → post-training → better policy loop.</span></p></div>
   </div>
 </div></section>
@@ -447,7 +447,7 @@ html[lang="en"] [data-zh]{display:none}
         <li><span data-zh><b>工程实践</b>：MCP 规范、插件评测、Remote Control、新模型提示与迁移指南、思维块（thinking block）处理等 API 变更；开源智能体项目（Agent Skills、computer-use、浏览器智能体、线性注意力等）。</span><span data-en><b>Engineering practice</b>: the MCP specification, plugin evals, Remote Control, new-model prompting and migration guides, API changes such as thinking-block handling; open-source agent projects (Agent Skills, computer use, browser agents, linear attention).</span></li>
         <li><span data-zh><b>每日论文流</b>：定时任务每天抓取 arXiv 新论文，由 Claude 生成中文摘要并推送到 Telegram。</span><span data-en><b>Daily paper feed</b>: a scheduled job fetched new arXiv papers every day, had Claude write Chinese summaries and pushed them to Telegram.</span></li>
         <li><span data-zh><b>方法转化</b>：把上述高阶用法逐项工程化（见上文各项）；按新模型提示与迁移指南重写 Skill 与指令文件；把小米 MiMo 等强化学习技术报告的经验沉淀为训练检查清单。</span><span data-en><b>Method transfer</b>: engineered the advanced patterns above (see the projects above); rewrote skills and instruction files per new-model prompting and migration guides; turned RL technical reports such as Xiaomi MiMo into a training checklist.</span></li>
-        <li><span data-zh><b>知识产出</b>：构建 Agentic RL 知识图谱与世界模型学习路线两份交互式页面，作为自我改进智能体方向的知识底座。</span><span data-en><b>Knowledge output</b>: an interactive Agentic RL knowledge map and a world-model learning roadmap that ground my research direction on self-improving agents.</span></li>
+        <li><span data-zh><b>知识产出</b>：构建 Agentic RL 知识图谱与世界模型学习路线两份交互式页面，作为研究方向的知识底座。</span><span data-en><b>Knowledge output</b>: an interactive Agentic RL knowledge map and a world-model learning roadmap that ground my research direction.</span></li>
       </ul>
       <div class="kw"><span>Frontier labs</span><span>RSI</span><span>Agent safety</span><span>Videos · podcasts</span><span>Daily arXiv feed</span></div>
     </div>
@@ -549,7 +549,7 @@ html[lang="en"] [data-zh]{display:none}
 </div></section>
 
 <footer><div class="wrap">
-  <h3><span data-zh>欢迎交流智能体 / 后训练 / 世界模型方向的实习与合作</span><span data-en>Open to internships &amp; collaboration on agents, post-training and world models</span></h3>
+  <h3><span data-zh>欢迎交流大模型基座 / 世界模型 / 智能体方向的实习与合作</span><span data-en>Open to internships &amp; collaboration on foundation models, world models and agents</span></h3>
   <p><span data-zh>面向大模型大厂的研究 / 算法实习岗位，欢迎来信。</span><span data-en>Looking for research / algorithm internships at leading LLM labs. Feel free to reach out.</span></p>
   <a class="btn primary" id="mailBtn2"><span data-zh>给我发邮件</span><span data-en>Email me</span></a>
   <div class="mailbox" id="mailText2">yifanxiao24 [at] gmail [dot] com</div>
